@@ -1,0 +1,426 @@
+﻿<!doctype html>
+<html>
+<head>
+<link href="css/solution.css" rel="stylesheet">
+<!--<link href="css/homepage.css" rel="stylesheet">-->
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<meta charset="utf-8">
+<title>解决方案-15cdn</title>
+<style type="text/css">
+ .navtopbox{ width:100%; background-color:#333333;font-size:14px;height: 25px;}
+.navtop-left{position: absolute;left: 5%;     color: white;}
+.navtop{display:inline-block;margin-top:-37px;vertical-align:middle;}
+.navtop ul li{display:inline-block;position:relative;vertical-align:middle;}
+
+
+.navbox{ width:100%;background-color:#5473ff; }
+.nav{width:1138px; height:80px; margin:0 auto;}
+.nav .navlogo{ padding-top:10px;float:left;display:inline-block;}
+.nav .navinfo{ display:inline-block;height:80px;margin-left:25px;vertical-align:middle;]}
+.navinfo  ul li{ display:inline-block;font-size:16px;position:relative;vertical-align:middle; }
+.navinfo  ul li a{color:#fff;display:inline-block;font-size:20px;line-height:60px;outline:0 none;padding:0 15px;transition:background-color 0.2s ease 0s;}
+.navinfo  ul li a:hover { line-height:60px; border-bottom: 3px solid #4074e1;}
+
+</style>
+</head>
+
+<body>
+<iframe src="navigation.html" frameBorder="0"  scrolling="no" height="100%" style="position: fixed;z-index: 999;" width="340px"></iframe>
+<!-- -head start -->
+<!-- 导航栏 -->  
+    <div class="navbox">
+    
+      <div class="nav">
+        <div class="navlogo">
+            <img src="images/LOGO23 (2).png">
+        </div>
+        <div class="navinfo">
+                <ul>
+                    <li><a href="../index.php">首页</a></li>
+                    <li> <a href="../chanpin/product.html">产品中心</a></li>
+                    <li><a href="../gywm/solution.html">解决方案</a></li>
+                    <li><a href="../yonghu/boot.html">使用手册</a></li>
+                    <li><a href="../gywm/aboutus.html">关于我们</a></li>
+                    <li><a href="http://www.15cdn.com/cdn/main.php">控制台</a></li>
+                    <li><a href="http://www.tzidc.com" target="_blank">IDC业务</a></li>
+                </ul>
+        </div>
+        <div class="navtop">
+        <ul>
+            <li style="width: 81px;"><a href="http://www.15cdn.com/cdn/login.php" style="color: #fff;text-decoration: none;">登录</a><font style="color: #fff;">/</font><a href="http://www.15cdn.com/cdn/register.php" style="color: #fff;text-decoration: none;">注册</a></li>
+        </ul>
+      </div>
+       
+      </div>
+</div>
+<!-- -head end -->
+    
+    <div class="banner"><img src="images/cdn_banner.jpg" >
+    </div>
+    
+    <!-- SOLUTION INFO START -->
+    <script type="text/javascript">
+    $(function () {
+        var uri = window.location.pathname,
+            anchor = window.location.hash;
+        if (uri === '/' &amp;&amp; anchor.length &lt;= 0) {
+            $('#nav-index').addClass('on');
+        } else if (uri.match('price')) {
+            $('#nav-price').addClass('on');
+        } else if (uri.match('about')) {
+            $('#nav-about').addClass('on');
+        } else if (uri.match('monitor')) {
+            $('#nav-monitor').addClass('on');
+        } else if (uri.match('solution')) {
+            $('#nav-solution').addClass('on');
+        } else if (uri.match('agreement')) {
+            $('#nav-agreement').addClass('on');
+        }else if(uri.match('book') || uri.match('home')){
+            $('.user-logbox').addClass('on');
+        }
+    });
+</script>
+
+    <div class="wpgrey">
+    <div class="main">
+        <div class="intro">
+            <div class="txttab">
+                <ul>
+                    <li title="游戏下载" class="on">
+                        <a id="i-tab-1" href="#" class="gameDownload"><i class="i-tab i-tab-1"></i>游戏下载</a>
+                    </li>
+                    <li title="移动应用">
+                        <a href="#" class="mobileApp"><i class="i-tab i-tab-2"></i>移动应用</a>
+                    </li>
+                    <li title="视频行业">
+                        <a href="#" class="videoIndustry"><i class="i-tab i-tab-3"></i>视频行业</a>
+                    </li>
+                    <li title="智能硬件">
+                        <a href="#" class="intelligentHardware"><i class="i-tab i-tab-4"></i>智能硬件</a>
+                    </li>
+                    <li title="在线直播">
+                        <a href="#" class="onlineLive"><i class="i-tab i-tab-5"></i>在线直播</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="intro-detail">
+                <div id="gameDownload" class="intro-detail-unit" style=" border-top: 1px dashed;">
+                    <div class="intro-detail-txt" >
+                        <h3>智能DNS保证优先就近访问</h3>
+                        <p>智能DNS解析系统保证用户就近访问服务与数据，调度系统根据负载状况、网络距离、响应时间等因素智能导向到最佳节点。</p>
+
+                        <h3>多源下载，下载速度酣畅淋漓</h3>
+                        <p>SDK下载会从原始地址、其他server、peer资源、bt网络、emule网络、边下边传等多源进行下载，继承迅雷的穿透、调度技术，下载速度达到极致。</p>
+
+                        <h3>完美的校验机制，为成功下载保驾护航</h3>
+                        <p>继承迅雷7完整的校验机制，客户端&amp;服务端双重校验，保证下载准确率，防止网络劫持等各种原因造成的下A得B。</p>
+
+                        <h3>灵活的计费方式</h3>
+                        <p>提供按带宽、流量两种计费方式，用户可以根据自己的业务特点灵活选择，游戏升级类带宽跑满率低的业务可以选择更划算的流量计费。</p>
+                    </div>
+                    <div class="title">
+                        <h3 class="title-bg1">经典案例</h3>
+                    </div>
+                    <div class="ins">
+                        <ul class="inslist clearfix">
+                            <li>
+                                <div class="ins-logo">
+                                    <img alt="" src="images/pw.png"></div>
+                                <strong>完美世界</strong>
+                                <p>集成SDK，实现p2s、p2p、边下边传、bt、emule等多源多协议加速功能，让下载速度飞一般酣畅；智能调度系统加海量节点，真正做到最后一公里就近下载。</p>
+                            </li>
+                            <li class="ins-none">
+                                <div class="ins-logo"></div>
+                                <strong>期待与您合作</strong>
+                                <p>业务咨询、市场合作：0769-22385558</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="display:none; border-top: 1px dashed; " id="mobileApp" class="intro-detail-unit">
+                    <div class="intro-detail-txt">
+                        <h3>保证弱网环境下下载体验</h3>
+                        <p>强大的多源下载以及校验机制，有效解决在弱网环境下下载失败、下载错误、速度慢等常见问题。</p>
+
+                        <h3>丰富的多源下载</h3>
+                        <p>多源下载包括CDN返回多节点并发下载、水晶网络p2p输血、其他bt、emule、thunder网络加速等。</p>
+
+                        <h3>防劫持</h3>
+                        <p>有效解决复杂网络环境中各种劫持、缓存问题，继承迅雷7的校验机制，保证下A得A。</p>
+
+                        <h3>强大的数据分析系统</h3>
+                        <p>数据分析使用云计算平台和丰富的数据模型，帮助用户各个维度分析服务质量。</p>
+
+                    </div>
+                    <div class="title">
+                        <h3 class="title-bg1">经典案例</h3>
+                    </div>
+                    <div class="ins">
+                        <ul class="inslist clearfix">
+                            <li>
+                                <div class="ins-logo">
+                                    <img alt="" src="images/mi.png"></div>
+                                <strong>小米应用商店</strong>
+                                <p>使用多源下载，下载过程增加校验机制，有效解决弱网环境下下载失败，下载错误，下载速度慢等问题。</p>
+                            </li>
+                            <li class="ins-none">
+                                <div class="ins-logo"></div>
+                                <strong>期待与您合作</strong>
+                                <p>业务咨询、市场合作：0769-22385558</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="display:none;  border-top: 1px dashed;" id="videoIndustry" class="intro-detail-unit">
+                    <div class="intro-detail-txt">
+                        <h3>防盗链</h3>
+                        <p>提供通用的防盗链方案，保证版权内容数据安全，特别情况下可以集成第三方防盗链策略。</p>
+
+                        <h3>成熟的流媒体技术</h3>
+                        <p>支持常见流媒体格式，支持按时间、字节偏移拖动，优秀的缓冲方案保证视频流畅播放。</p>
+
+                        <h3>分层分发，收敛回源</h3>
+                        <p>分层CDN架构，保证数据快速全网部署，回源收敛，节省用户回源带宽。</p>
+
+                        <h3>热资源&amp;长尾资源灵活部署</h3>
+                        <p>动态调整冷热资源部署策略，冷热资源按访问频率互相转换，支持热资源区域化，保证热资源更靠近用户访问的末端节点。</p>
+                    </div>
+                    <div class="title">
+                        <h3 class="title-bg1">经典案例</h3>
+                    </div>
+                    <div class="ins">
+                        <ul class="inslist clearfix">
+                            <li>
+                                <div class="ins-logo">
+                                    <img alt="" src="images/iqiyi.png"></div>
+                                <strong>爱奇艺</strong>
+                                <p>星域CDN使用防盗链机制，保证客户版权内容数据安全，同时有效降低企业成本，在保证服务品质的前提下，企业带宽成本平均降低1/2。</p>
+                            </li>
+                            <li class="ins-none">
+                                <div class="ins-logo"></div>
+                                <strong>期待与您合作</strong>
+                                <p>业务咨询、市场合作：0769-22385558</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="display:none;  border-top: 1px dashed;" id="intelligentHardware" class="intro-detail-unit">
+                    <div class="intro-detail-txt">
+                        <h3>丰富的api接口</h3>
+                        <p>为用户提供丰富的api接口，方便用户实现自动化维护。</p>
+
+                        <h3>下载速度和成功率比肩提升</h3>
+                        <p>多源下载&amp;校验机制保证下载速度和成功率双双得到提升。</p>
+
+                        <h3>迅雷下载引擎后台支持</h3>
+                        <p>后台由强大的迅雷下载引擎支持，让多源下载、p2p打洞穿透等更有效率。</p>
+
+                        <h3>强大的SDK</h3>
+                        <p>SDK完美地继承了迅雷7稳定的下载功能，接口丰富，方便用户做各种定制开发。</p>
+                    </div>
+                    <div class="title">
+                        <h3 class="title-bg1">经典案例</h3>
+                    </div>
+                    <div class="ins">
+                        <ul class="inslist clearfix">
+                            <li>
+                                <div class="ins-logo">
+                                    <img alt="" src="images/mi.png"></div>
+                                <strong>小米盒子</strong>
+                                <p>迅雷后台强大的下载引擎做服务支撑，帮其提升ROM升级，app下载，点播直播内容分发的下载速度和成功率。提供丰富的API接口和数据展示，让管理更方便、服务更透明。</p>
+                            </li>
+                            <li class="ins-none">
+                                <div class="ins-logo"></div>
+                                <strong>期待与您合作</strong>
+                                <p>业务咨询、市场合作：0769-22385558</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="display:none; border-top: 1px dashed; " id="onlineLive" class="intro-detail-unit">
+                    <div class="intro-detail-txt">
+                        <h3>H.265技术,节省50%流量</h3>
+                        <p>采用业界领先的H.265实时编解码技术，图像质量不变，为客户节省50%以上的流量。</p>
+
+                        <h3>DCDN分发，保证质量</h3>
+                        <p>我们有 1、迅雷超级节点支持；2、全国过万个加速节点；3、接入各类型ISP，保障视频观看质量。</p>
+
+                        <h3>动态调度算法，效率最优</h3>
+                        <p>根据用户网络环境自适应直播码率，保证用户接入质量。全网智能链路选择保证整体传输效率最优。</p>
+
+                        <h3>多协议支持</h3>
+                        <p>1、支持RTMP、HLS、HTTP+FLV等传输方式；2、覆盖移动端和PC端。</p>
+
+                        <h3>防盗链</h3>
+                        <p>采用动态密码锁，该机制下，迅雷看看高清内容盗链数为0。</p>
+
+                    </div>
+                    <div class="title">
+                        <h3 class="title-bg1">经典案例</h3>
+                    </div>
+                    <div class="ins">
+                        <ul class="inslist clearfix">
+                            <li>
+                                <div class="ins-logo">
+                                    <img alt="" src="images/yaoguo.png"></div>
+                                <strong>腰果</strong>
+                                <p>腰果采用领先的传输编码技术，通过星域CDN无限节点调度，极大的降低卡顿，延迟控制在2秒以内，使大规模互动级直播成为可能，打造极佳的用户体验。</p>
+                            </li>
+                            <li class="ins-none">
+                                <div class="ins-logo"></div>
+                                <strong>期待与您合作</strong>
+                                <p>业务咨询、市场合作：0769-22385558</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script language="javascript">
+    $(document).ready(function () {
+        $('.txttab a').click(function (e) {
+            $(this).parent().addClass("on").siblings().removeClass("on");
+            var tab = $(this).attr('class');
+            $('#' + tab).show().siblings().hide();
+            //window.location.hash = tab;
+            return false;
+        });
+        var tabName = window.location.hash.substring(1) || 'gameDownload';
+        $('.txttab a.'+tabName).click();
+    });
+</script>
+    
+        <!-- <table class="exp">
+        	<tbody><tr>
+			<td><u>500</u>多家政府/企事业单位风险评估</td>
+              <td><u>200</u>余种产品安全评测</td>
+              <td><u>100</u>多名专业安全评测人员</td>
+              <td><u>20</u>家部委信息系统评测项目</td>
+              <td><u>100%</u>的客户续费率</td>
+            </tr>
+        </tbody></table><div class="expBg"></div><div class="shade"></div> -->
+    <!-- SOLUTION INFO END -->
+    
+    
+<div class="app">
+      <div class="apptop">
+            <h3>移动互联网</h3>
+        <p>面对快速发展的移动互联网行业，以及不断更新的多样化终端设备，又拍云为您打造全面升级的移动互联网加速解决方案，也为您提供专业的架构咨询与技术服务。</p>
+  </div>
+      <div class="appcenter">
+      <p class="ppone">移动互联网行业的困境</p>
+      <div class="pptwo">
+          <ul>
+             <li><p class="ddone">糟糕的用户体验</p><p class="ddtwo"><img src="images/dd1.png" width="142" height="121"></p>
+             </li>
+            <li><p class="ddone">业务访问数据分析盲点</p><p class="ddtwo"><img src="images/dd2.png" width="142" height="121"></p>
+             </li>
+             <li><p class="ddone">域名劫持不可控</p><p class="ddtwo"><img src="images/dd3.png" width="142" height="121"></p>
+             </li>
+             <li><p class="ddone">链路劫持风险</p><p class="ddtwo"><img src="images/dd4.png" width="142" height="121"></p>
+             </li>
+          </ul>
+      </div>
+      </div>
+</div>
+<!-- <div class="solution">
+  <div class="scenter">
+      <h3>推荐架构方案</h3>
+      <div class="sleft">
+       <div class="leftone">
+            <P class="fast">又拍云全站加速 CDN</P>
+            <p class="fastone">又拍云拥有 150 多个国内优质节点，提供国内覆盖率最高的移动节点，以及 SPDY/3.1 对请求进行压缩、优先级排列和多路复用等技术处理，方便移动用户随时随地快速接入云加速，降低应用的加载时间，大幅提升用户的加速体验。</p>
+       </div>
+       <div class="leftone">
+            <P class="fast">又拍云全站加速 CDN</P>
+            <p class="fastone">又拍云拥有 150 多个国内优质节点，提供国内覆盖率最高的移动节点，以及 SPDY/3.1 对请求进行压缩、优先级排列和多路复用等技术处理，方便移动用户随时随地快速接入云加速，降低应用的加载时间，大幅提升用户的加速体验。</p>
+       </div>
+       <div class="leftone">
+            <P class="fast">又拍云全站加速 CDN</P>
+            <p class="fastone">又拍云拥有 150 多个国内优质节点，提供国内覆盖率最高的移动节点，以及 SPDY/3.1 对请求进行压缩、优先级排列和多路复用等技术处理，方便移动用户随时随地快速接入云加速，降低应用的加载时间，大幅提升用户的加速体验。</p>
+       </div>
+      </div>
+      <div class="sright">
+    <img src="images/mobile_internet_flowchart.png" width="640" height="511"> </div>
+  </div>
+</div> -->
+<div class="search-so">
+     <h3>推荐架构方案</h3>
+</div>  
+<div class="way">
+     <ul>
+         <li><span class="img"><img src="images/s1.png" width="150" height="146"></span><p class="wayone">全网覆盖</p><p class="waytwo">涵盖电信、联通、移动、教育网等各大运营商，解决链路互通难题。</p></li>
+         <li><span class="img"><img src="images/s2.png" width="150" height="146"></span><p class="wayone">移动端提速</p>
+         <p class="waytwo">采用 TCP 单边加速，并支持标准的 SPDY/3.1 协议，有效降低网络时延。</p></li>
+         <li><span class="img"><img src="images/s3.png" width="150" height="146"></span><p class="wayone">运营体系建立</p>
+         <p class="waytwo">海量日志分析、线上实时监控，让加速更清晰更直观。</p></li>
+         <li><span class="img"><img src="images/s4.png" width="150" height="146"></span><p class="wayone">劫持防护</p>
+         <p class="waytwo">HTTP DNS 智能排除域名劫持问题，确保资源访问安全可靠。</p></li>
+     </ul>
+</div>
+<!--<div class="footbanner" style="margin-bottom: -5px;"><img src="images/footbanner.jpg" ></div>       -->
+
+
+       <!--footer  start-->
+	<div id="footer">
+<div class="footboxb">
+	<div class="foot_top">
+		<div class="foot_top_info">
+			<h2>15CDN全新赏上线，让你瞬间提速</h2>
+		</div>
+	</div>
+    <div class="footboxjuzhong">
+      <div class="footboxx">
+        <dl>
+        	<div class="foot_bottom_info">
+		        	<dt><img src="../images/tu1.jpg"  ><p>联系我们</p></dt>
+		        	<dd>微信：ritering</dd>
+		        	<dd>Q   Q：2851266725</dd>
+		        	<dd>邮箱：2851266725qq.com</dd>
+		        	<dd>电话：400-960-5005</dd>
+        	</div>
+        </dl>
+         <dl>
+           <div class="foot_bottom_info">
+		        	<dt><img src="../images/tu2.jpg"  ><p>关于我们</p></dt>
+		        	<dd><a href="##">公司简介</a></dd>
+		        	<dd><a href="##">服务条款</a></dd>
+		        	<dd><a href="##">人才招聘</a></dd>
+        	</div>
+        </dl>
+         <dl>
+        	 <div class="foot_bottom_info">
+		        	<dt><img src="../images/tu3.jpg"  ><p>使用指南</p></dt>
+		        	<dd><a href="##">代理商登陆</a></dd>
+		        	<dd><a href="##">广告主登陆</a></dd>
+		        	<dd><a href="##">代理商资质查询</a></dd>
+        	</div>
+        </dl>
+       </div>
+     </div>
+ </div>
+    <div class="weibubox">
+      <div class="weibu">
+      <p>Copyright© 2014.Company name All rights reserved.腾正科技</p>
+      </div>
+    </div>   
+</div>
+	<!--footer  end-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e9babec693a691e0f89aea867d6c48e6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

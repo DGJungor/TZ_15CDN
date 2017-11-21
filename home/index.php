@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+<head>
+<meta charset="utf-8">
+<title>15CDN</title>
+</head>
+
+<body>
+	<div class="navtopbox">
+		<div class="navtop">
+			<div class="logo">
+				<img src="images/LOGO.jpg">
+			</div>
+
+			<div class="navwz">
+				<ul>
+					<li><a href="index.html" id="a">首页</a></li>
+					<li><a href="../chanpin/product.html" id="a">产品中心</a></li>
+					<li><a href="../gywm/solution.html" id="a">解决方案</a></li>
+					<li><a href="../yonghu/boot.html" id="a">使用手册</a></li>
+					<li><a href="../gywm/aboutus.html" id="a">关于我们</a></li>
+					<li><a href="http://www.15cdn.com/cdn/login.php" id="a">控制台</a></li>
+					<li><a href="http://www.tzidc.com/" id="a">IDC业务</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+
+<!-- 	<div class="banner">
+		<img src="images/banner.jpg">
+	</div> -->
+	<!--  banner-->
+	<div class="slide-bg">
+	<div class="slide-wp">
+        <div id="slides" class="slides">
+            <div>
+                <div class="slideChild" style="display:none;">
+                    <a class="a-ad js-aAd" href="http://sc.chinaz.com/"></a>
+                </div>
+                <img class="slideImg" src="images/banner1.jpg" galleryimg="no">
+                <div class="button">
+                <!-- 跳转产品页面 -->
+			        <a href="../chanpin/product.html">
+			       		<div style="width: 270px;height:56px;"></div>
+			    	</a>
+		        </div>
+            </div>
+            <div>
+                <div class="slideChild"></div>
+        	    <img class="slideImg" src="images/banner2.jpg" galleryimg="no">
+            </div>
+            <div>
+                <div class="slideChild">
+                    <a class="a-video opa js-aVideo" href="http://sc.chinaz.com/" target="_blank"></a>
+                </div>
+        	    <img class="slideImg" src="images/banner3.jpg" galleryimg="no">
+            </div>
+        </div><!--end slides-->
+    </div><!--end slide-wp-->
+</div><!--end slide-bg-->
+<hr style="border:none;border-top:2px ridge green;align:center ;width:83%;" />
+ <div class="global">
+     
+        <div class="global_left" >
+            <dt class="global_title">点击查看腾正 CDN 加速全球节点分布情况</dt>
+            <dd  >
+             
+                <a target="_blank" href="#"><img id="map" alt="" src="images/image1.jpg" width="460px" height="255px"></a>
+                 
+            </dd>
+        </div>
+         
+         <div class="global_right" >
+            <dl class="news">
+            <dt ><a href="/Home/NewList?pClassId=56" style="color:black;font-weight: bold;
+    font-size: 20px;" >新闻中心</a><br/></dt>
+            <dd class="newsList">
+                <ul style="margin-left:-100px;">
+                   <?php
+                    include_once("../config/config_global.php");
+                    function FikCDNDB_Connect()
+                    { 
+                      global $_config;
+                      
+                        // 连接数据库
+                      $db_link = mysql_connect($_config['db']['1']['dbhost'],$_config['db']['1']['dbuser'], $_config['db']['1']['dbpw']);
+                      //or die("连接数据库错误" . mysql_error());
+                      if(!$db_link){
+                        return false;
+                      }
+                      
+                      $sql = "SET NAMES ".$_config['db']['1']['dbcharset'];
+                      mysql_query($sql,$db_link);
+                      mysql_select_db($_config['db']['1']['dbname'],$db_link);
+                      
+                      return $db_link;  
+                    }
+                    $db_link = FikCDNDB_Connect();
+   
+      
+
+                    /*$pdo=new PDO("mysql:host=localhost;dbname=fikcdn","root","",array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+                    $pdo->query("set names utf8");
+                    $sql="SELECT * FROM `fikcdn_news` ORDER BY `fikcdn_news`.`createdate` DESC limit 5";
+                    $stmt=$pdo->prepare($sql);
+                    $stmt->execute(array());
+                    $data=$stmt->fetchAll(PDO::FETCH_ASSOC);*/
+                    $sql="SELECT * FROM `fikcdn_news` ORDER BY `fikcdn_news`.`createdate` DESC limit 5";
+                     $result = mysql_query($sql,$db_link);
+                    while($rs=mysql_fetch_assoc($result)){
+                        $data[]=$rs;
+                      }
+                       
+                    for($i=0;$i<count($data);$i++){
+                    
+                     
+                   echo  '<li ><a target="_blank" href="news.php?titles='.$data[$i]['titles'].'" id="'.$i.'" onmouseover="change('.$i.')"  title="'.$data[$i]['img_url'].'" >'.$data[$i]['titles'].'</a></li>';
+                    }
+
+                    ?>
+                         
+                </ul>
+            </dd>
+             <dd style="margin-left:50%"><a href="news_list.php">更多>>></a></dd>
+            </dl>
+          </div>
+</div>
+ <hr style="border:none;border-top:2px ridge green;align:center ;width:83%;" />
+ <div class="centerone">
+       <div class="c-title">
+      <ul>
+         <li class="c-ttop">为什么选择我们？</li>
+         <li>比快更快、即安全又稳定、智能化分析、自主挑选、以业界领先水平给您提供更好的CDN服务</li>
+      </ul>
+      </div>
+      <div class="advantages">
+      <ul>
+          <li class="adone"><h3>弱网加速</h3><p>15CDN采用动静态自动分离、全网智能路径选择技术，有效解决数据传输过程中由于各网络节点波动所造成的下载失败、下载错误、速度变慢等问题。</p></li>
+          <li class="adtwo"><h3>动态防御</h3><p>15CDN运用智能DNS域名解析技术，附依丰富的网络节点，有效抵御DDOS和CC攻击，保障源服务器安全稳定。</p></li>
+          <li class="adthree"><h3>带宽优化</h3><p>自动生成服务器内容镜像到Cache服务器，用户访问时从Cache服务器上读取数据，减少数据在网路上的传输距离，分担网络流量，减轻源站点的负载压力。</p></li>
+          <li class="adfour"><h3>DIY定制</h3><p>用户根据自身需求，可以自主制定节点资源，达到资源利用最大化的效果。</p></li>
+      </ul>
+      </div> 
+</div>
+ 
+	<!-- end  banner--><!-- 解决方案 -->
+	<div id="solutionWrapper" class="solution">
+	 <!-- <div
+				data-bg="1" data-bgheight="895" data-speed="25"
+				data-type="parallaxScroll" class="solution-bg"
+				id="bg"
+				style="background-image: url(&quot;images/bgds.jpg&quot;); background-position: 50% -15px; "></div> -->
+      <div class="center">
+       <div class="c-title">
+      <ul>
+         <li class="c-ttop">在这里有你所需的一切</li>
+         <li>&nbsp;</li>
+      </ul>
+      </div>
+      <div class="sleft">
+           <ul>
+               <li onclick="clickmethod('o2o');" class="sleft_on" id="o2o">O2O</li>
+               <li onclick="clickmethod('jr');" id="jr">金融</li>
+               <li onclick="clickmethod('yx');" id="yx">游戏</li>
+               <li onclick="clickmethod('yl');" id="yl">医疗</li>
+               <li onclick="clickmethod('dmt');" id="dmt">多媒体</li>
+               <li onclick="clickmethod('wlw');" id="wlw">物流</li>
+           </ul>
+      </div>
+      <div class="sright" id="o2oinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/dx1.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/dx2.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/dx3.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>O2O决方案</h3>
+                 <p>针对网站内容的特性提供最经济、最优化的网站加速方案，对文字、图片、视频、音频等不同内容和频道采取不同的加速方法，同时对          加速节点优化布局，解决网络瓶颈，以最低的运营费用达到最佳的用户体验</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      
+      <!-- 金融 -->
+      <div class="sright" style="display: none;"  id="jrinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/jr1.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/jr2.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/jr3.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>金融解决方案</h3>
+                 <p>网站在用户体验和安全性领域所面临的问题获得了全面而有效的解决，帮助网站在整体上获得了稳定的高性能，在大大提高客户体验的          同时减少了网站的放弃率，并最终提高网站的交易转换率和整体收入</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      <!-- 游戏 -->
+      <div class="sright" style="display: none;"  id="yxinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/yx1.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/yx2.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/yx3.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>游戏解决方案</h3>
+                 <p>根据网游行业服务器集中构架、带宽需求突发的特点，结合自身的技术优势和网络资源的可控性，CDN避开了互联网上的故障点，通过           快速、可靠的路径发送游戏下载， 从而缩短传输时间，提高下载速度，并提高了用户体验施</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      <!-- 医疗 -->
+      <div class="sright" style="display: none;"  id="ylinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/yl1.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/yl2.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/yl3.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>医疗解决方案</h3>
+                 <p>15CDN加速医疗互联网应用的信息化建设，提高医患时间灵活性、访问速度、安全交流访问</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      <!-- 多媒体 -->
+      <div class="sright" style="display: none;"  id="dmtinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/dmt1.png" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/dmt2.jpg" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/dmt3.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>多媒体解决方案</h3>
+                 <p>按每个视频网站的运营情况提供最经济优化的网站加速方案，对视频、音频、直播等多媒体，各种内容和形式采取不同的加速或            解决方法，并对加速节点优化布局，解决网络瓶颈，在大幅加快网站访问速度的同时节省运营成本</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      <!-- 物流 -->
+      <div class="sright" style="display: none;"  id="wlwinfo">
+            <div class="srightlogo">
+                 <ul>
+                    <li><img src="images/wl1.jpg" width="225" height="121" alt="15CDN"/></li>
+                    <li><img src="images/wl2.png" width="225" height="121" alt="15CDN"/></li>
+                 </ul>
+            </div>
+            <div class="dianshang">
+                 <h3>物流解决方案</h3>
+                 <p>业务推广期承担高峰访问压力：助力传统运输物流行业的升级转型，提供稳定、安全的网络部署，搭建稳定可靠的物流平台，15CDN遍           布全球的网络规模，可以为企业承担高峰访问压力</p>
+            </div>
+            <div class="search"><img src="images/search.gif" width="112" height="45" alt="15CDN"/></div>
+      </div>
+      
+      
+      
+      </div>
+</div>
+	<!--end 解决方案  -->
+	
+<!-- 客户案例 -->
+<div class="title">客户案例</div>
+<div class="layout solid">
+  <div class="leftLoop_client leftLoop_client1 client">
+    <div class="bd">
+      <div style="overflow:hidden; position:relative; width:1200px;margin-left:33px;" class="tempWrap">
+      <ul class="picList" style="width: 5760px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -1920px;">
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/ffrjxzz-log.png" alt="非凡软件站"></a>
+              <p>非凡软件站</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/zzzx-log.jpg" alt="站长资讯"></a>
+              <p>站长资讯</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/Jz5ugreen.png" alt="Jz5u绿色下载"></a>
+              <p>Jz5u绿色下载</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/perfect.png" alt="完美下载"></a>
+              <p>完美下载</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/weiwei.png" alt="维维软件园"></a>
+              <p>维维软件园</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/97LOGO.png" alt="97down"></a>
+              <p>就去下载</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/future.png" alt="未来软件园"></a>
+              <p>未来软件园</p>
+            </li>
+             <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/huacaisoftware.png" alt="华彩软件园"></a>
+              <p>华彩软件园</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/sdgame.jpg" alt="盛大游戏"></a>
+              <p>盛大游戏</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="130" height="130" border=0px src="images/wlLogo.jpg" alt="瓦力科技" style="margin-top: 6px;"></a>
+              <p>瓦力科技</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="150" border=0px src="images/hntvlogo.jpg" alt="湖南卫视" style="margin-top: 5px;"></a>
+              <p>湖南卫视</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/stlogo.png" alt="沙塔科技"></a>
+              <p>沙塔科技</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/xzb-log.jpg" alt="下载吧"></a>
+              <p>下载吧</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/a5xz-log.gif" alt="A5下载"></a>
+              <p>A5下载</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/hjrj-log.jpg" alt="华军软件园"></a>
+              <p>华军软件园</p>
+            </li>
+            <li style="float: left; width: 230px;"><a href="javascript::void(0);"><img width="160" height="50" border=0px src="images/zgzjlm-log.png" alt="中国主机联盟"></a>
+              <p>中国主机联盟</p>
+            </li>
+            </ul></div>
+    </div>
+    <div class="hd">
+				<ul>
+					<a class="next"></a>
+					<li class="client_li1"></li>
+					<li class="client_li2"></li>
+					<li class="client_li3"></li>
+					<li class="client_li4"></li>
+					<li class="client_li5"></li>
+					<li class="client_li5 on"></li>
+					<li class="client_li5"></li>
+					<li class="client_li5"></li>
+					<a class="prev"></a>
+				</ul>
+	</div>
+    <div class="mask_left"></div>
+    <div class="mask_text1"></div>
+    <div class="mask_right"></div>
+    <div class="mask_text2"></div>
+  </div>
+</div>
+<!--end  客户案例 -->
+<!-- footer -->
+<div id="footer">
+<div class="footboxb">
+	<div class="foot_top">
+		<div class="foot_top_info">
+			<h2>15CDN全新赏上线，让你瞬间提速</h2>
+		</div>
+	</div>
+    <div class="footboxjuzhong">
+      <div class="footboxx">
+        <dl>
+        	<div class="foot_bottom_info">
+		        	<dt><img src="images/tu1.jpg"  ><p>联系我们<span>More>></span></p></dt>
+		        	<dd>微信：ritering</dd>
+		        	<dd>Q   Q：2851266725</dd>
+		        	<dd>邮箱：2851266725qq.com</dd>
+		        	<dd>电话：400-960-5005</dd>
+        	</div>
+        </dl>
+         <dl>
+           <div class="foot_bottom_info">
+		        	<dt><img src="images/tu2.jpg"  ><p>关于我们<span>More>></span></p></dt>
+		        	<dd><a href="##">公司简介</a></dd>
+		        	<dd><a href="##">服务条款</a></dd>
+		        	<dd><a href="##">人才招聘</a></dd>
+        	</div>
+        </dl>
+         <dl>
+        	 <div class="foot_bottom_info">
+		        	<dt><img src="images/tu3.jpg"  ><p>使用指南<span>More>></span></p></dt>
+		        	<dd><a href="##">代理商登陆</a></dd>
+		        	<dd><a href="##">广告主登陆</a></dd>
+		        	<dd><a href="##">代理商资质查询</a></dd>
+        	</div>
+        </dl>
+       </div>
+     </div>
+ </div>
+    <div class="weibubox">
+      <div class="weibu">
+      <p>Copyright© 2014.Company name All rights reserved.腾正科技</p>
+      </div>
+    </div>   
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<script src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/scroll-v1.js"></script>
+<script>
+$(function() {
+	$('#slides').slidesjs({
+		play:{
+			active: false,
+			effect: "fade",
+			auto: true,
+			interval: 4000
+		},
+		effect: {
+			fade: {
+			speed: 1500,
+			crossfade: true
+			}
+		},
+		pagination: {
+			active: true
+		},
+		navigation:{
+			active: false
+		}
+	});
+});
+
+</script>
+<!-- end footer -->
+</html>
+</body>

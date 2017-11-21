@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用手册</title>
+<!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+<style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.header{ width:100%; background:#F5F5F5;}
+.nav{ width:1000px; margin:0 auto; overflow:hidden;}
+.nav ul li{
+	height:40px;
+	line-height:40px;
+	float:left;
+	padding:10px 5px;
+	margin:0px 5px;
+	position:relative;
+}
+
+.nav ul li a{ color:#666; font-family:'Microsoft Yahei'; font-size:16px; text-decoration:none;}
+.nav ul li a:hover{
+	color:#1C86D0;
+	text-decoration:none;
+}
+.nav ul li span{ display:block; position:absolute; width:0px; height:0px; background:#1FAEFF; top:58px; left:50%;}
+.STYLE2 {font-family: "微软雅黑"}
+#apDiv1 {
+	position:absolute;
+	left:335px;
+	top:10px;
+	width:116px;
+	height:37px;
+	z-index:1;
+}
+
+ .navtopbox{ width:100%; background-color:#333333;font-size:14px;height: 25px;}
+.navtop-left{position: absolute;left: 5%;     color: white;}
+.navtop{display:inline-block;margin-top:-37px;vertical-align:middle;}
+.navtop ul li{display:inline-block;position:relative;vertical-align:middle;}
+
+
+.navbox{ width:100%;background-color:#5473ff; }
+.nav{width:1178px; height:80px; margin:0 auto;}
+.nav .navlogo{ padding-top:10px;float:left;display:inline-block;}
+.nav .navinfo{ display:inline-block;height:80px;margin-left:25px;vertical-align:middle;]}
+.navinfo  ul li{ display:inline-block;font-size:16px;position:relative;vertical-align:middle; }
+.navinfo  ul li a{color:#fff;display:inline-block;font-size:20px;line-height:60px;outline:0 none;padding:0 15px;transition:background-color 0.2s ease 0s;}
+.navinfo  ul li a:hover { line-height:60px; border-bottom: 3px solid #4074e1;}
+</style>
+</head>
+
+<body>
+<!-- -head start -->
+<!-- 导航栏 -->  
+    <div class="navbox">
+    
+      <div class="nav">
+        <div class="navlogo">
+            <img src="images/LOGO23 (2).png">
+        </div>
+        <div class="navinfo">
+                <ul>
+                    <li><a href="../index.php" target="_parent">首页</a></li>
+                    <li> <a href="../chanpin/product.html" target="_parent">产品中心</a></li>
+                    <li><a href="../gywm/solution.html" target="_parent">解决方案</a></li>
+                    <li><a href="../yonghu/boot.html" target="_parent">使用手册</a></li>
+                    <li><a href="../gywm/aboutus.html" target="_parent">关于我们</a></li>
+                    <li><a href="http://www.15cdn.com/cdn/main.php" target="_parent">控制台</a></li>
+                    <li><a href="http://www.tzidc.com" target="_blank">IDC业务</a></li>
+                </ul>
+        </div>
+        <div class="navtop">
+        <ul>
+            <li style="width: 81px;"><a href="http://www.15cdn.com/cdn/login.php" style="color: #fff;text-decoration: none;">登录</a><font style="color: #fff;">/</font><a href="http://www.15cdn.com/cdn/register.php" style="color: #fff;text-decoration: none;">注册</a></li>
+        </ul>
+      </div>
+       
+      </div>
+</div>
+<!-- -head end -->
+<div class="header">
+<div class="nav">
+	<ul>
+      <li><a href='ziye/dengluzhuce.html' target="mainFrame">用户注册</a><span></span></li>
+   	  <li><a href='ziye/yonghuchongzhi.html' target="mainFrame">用户充值</a><span></span></li>
+   	  <li><a href='ziye/goumaitaocan.html' target="mainFrame">购买菜单</a><span></span></li>
+    	<li><a href='ziye/tianjia.html' target="mainFrame">添加域名</a><span></span></li>
+    	<li><a href='ziye/xiugaiyuming.html' target="mainFrame">修改域名解析</a><span></span></li>
+	</ul>
+</div>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.nav li').hover(function(){
+		$('span',this).stop().css('height','2px');
+		$('span',this).animate({
+			left:'0',
+			width:'100%',
+			right:'0'
+		},200);
+	},function(){
+		$('span',this).stop().animate({
+			left:'50%',
+			width:'0'
+		},200);
+	});
+});
+</script>
+</body>
+</html>

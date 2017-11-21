@@ -1,0 +1,31 @@
+/* µ×²¿ */
+#cdn15ft #cdn15fc1{
+	width: 100%;
+	height: 250px;
+	background-color: rgb(52,83,145);
+}
+#cdn15bdy #cdn15bc1 #icardh{
+	margin-left: 0px;
+}
+
+.cdn15fc1-contens{
+	width: 1177px;
+	height: 250px;
+	margin: 0 auto;
+}
+.cdn15fc1-conten{
+	width: 233px;
+	height: 170px;
+	float: left;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.cdn15fc1-conten span{
+	font-size: 30px;
+	color: #FFF;
+}
+.cdn15fc1-conten ul li{
+	line-height:43px;
+	font-size: 19px;
+	color: #FFF;
+}

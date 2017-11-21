@@ -1,0 +1,60 @@
+/* id相关按顺序排版 */
+/* 头部 */
+#cdn15hd{
+	width: 100%;
+	height: 110px;
+	background-color: #f0f0f0;
+}
+/* 菜单 */
+#cdn15hd #cdn15mn{
+	margin-left:auto;
+	margin-right:auto;
+	width: 1248px;
+	height: 80px;
+}
+#cdn15hd #cdn15mn #cdn15logo{
+	width: 215px;
+	height: 80px;
+	background: url("../img/logo.png") no-repeat 50% 50%;
+	float: left;
+}
+#cdn15hd #cdn15mn #cdn15ct{
+	width: 860px;
+	height: 80px;
+	float: right;
+}
+#cdn15hd #cdn15mn #cdn15ct ul{
+	display: block;
+}
+#cdn15hd #cdn15mn #cdn15ct ul li{
+	font-size:20pt;
+	float:left;
+	margin-top:20px;
+	text-align:center;
+	width:158px;
+	color:#000;
+}
+.inithd {
+	text-decoration: none;
+	color:#000;
+}
+.cdnlogin{
+	width:100%;
+	height:30px;
+	background-color:#D9D9D9;
+}
+.cdnlogin-bg{
+	margin:0 auto;
+	width:1248px;
+	height:30px;
+}
+.cdnlogin-co{
+	float:right;
+	width:235px;
+	height:25px;
+	padding-top:5px;
+}
+.cdnlogin-co a{
+	width:60px;
+	margin-left:15px;
+}

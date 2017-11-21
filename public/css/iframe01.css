@@ -1,0 +1,16 @@
+/* CSS Document */
+
+/*屏蔽bootstrap的默认字体是宋体*/
+body{
+	/*background-color:#eee;*/
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	}
+button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
+	font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	}
+.title{
+	background-color:#69F;
+	}
+	
+.main_icon{
+	}

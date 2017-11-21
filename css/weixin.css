@@ -1,0 +1,10 @@
+.floating_ck{position:fixed; top:680px; right:35px;} 
+.floating_ck dl dd{position:relative;width:66px;height:66px;background-color:#008FFF;border-bottom:solid 0px #555666;text-align:center;background-repeat:no-repeat;background-position:center 20%;cursor:pointer;}
+.floating_ck dl dd:hover .floating_left{display:block;}
+.qrcord{background-image:url(../images/weixintubiao.png);}
+.floating_ck dd span{color:#fff;display:block;padding-top:47px;font-size:10px;}
+.floating_left{position:absolute;left:-160px;top:0px;width:160px;height:80px;display:none;}
+.floating_left a{color:#fff;line-height:80px;}
+.floating_ewm{height:260px;top:-40px;}
+.floating_ewm i{background-image:url(../images/code.png);display:block;width:145px;height:145px;margin:auto;margin-top:7px;background-repeat:no-repeat;}
+.floating_ewm p{color:#fff;margin-top:5px;}

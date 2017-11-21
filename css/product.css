@@ -1,0 +1,317 @@
+﻿.hot-sell{
+	width: 1150px;
+	height: 500px;
+	margin: 0 auto;
+}
+.hot-sell-div{
+	width: 1150px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.hot-sell-title{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #009EE5;
+}
+.hot-sell-sup{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 14px;
+	color: #5F5F5F;
+}
+.hot-sell-types{
+	width: 100%;
+	height: 400px;
+	margin-top: 35px;
+}
+.hot-sell-type{
+	width: 520px;
+	height: 100%;
+	float: left;
+	margin-left: 50px;
+	border: 3px solid;
+	border-image: -webkit-linear-gradient(left, #17358B , #3ACFF7)30 30; /* Safari 5.1 - 6.0 */
+	border-image: -moz-linear-gradient(to right, #17358B, #3ACFF7)30 30;/* Firefox 3.6 - 15 */
+	border-image: -o-linear-gradient(right, #17358B, #3ACFF7)30 30; /* Opera 11.1 - 12.0 */
+	border-image: linear-gradient(to right, #17358B, #3ACFF7)30 30;
+}
+.hot-sell-type-title{
+	width: 100%;
+	height: 45px;
+	padding-top: 15px;
+	text-align:center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+    background: -moz-linear-gradient(left,  #17358B 0%, #3ACFF7 100%);
+    background: -webkit-gradient(linear, left, right, color-stop(0%,#17358B), color-stop(100%,#3ACFF7));
+    background: -webkit-linear-gradient(left,  #17358B 0%,#3ACFF7 100%);
+    background: -o-linear-gradient(left,  #17358B 0%,#3ACFF7 100%);
+    background: -ms-linear-gradient(tleftop,  #17358B 0%,#3ACFF7 100%);
+    background: linear-gradient(to right,  #17358B 0%,#3ACFF7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17358B', endColorstr='#3ACFF7',GradientType=0 );	
+}
+.hot-sell-type-detail{
+	width: 97%;
+	height: 260px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.hot-sell-l{
+	width: 230px;
+	height: 250px;
+	float: left;
+	border: 1px solid #dedede;
+}
+.hot-sell-l-title{
+	width: 96%;
+	height: 39px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-align: left;
+	background-color: #FF8A00;
+	padding-left: 10px;
+	padding-top: 9px;
+}
+.hot-sell-l-detail{
+	width: 100%;
+	height: 205px;
+	color: #FF8A00;
+	font-size: 14px;
+}
+.hot-sell-l-detail ul{
+	list-style: none;
+	line-height: 25px;
+	padding-left: 0px;
+	padding-left: 19px;
+	padding-top: 15px;
+}
+.hot-sell-add{
+	width: 40px;
+	height: 42%;
+	text-align: center;
+	color: #DB4260;
+	font-size: 25px;
+	font-weight: 700;
+	float: left;
+	padding-top: 99px;
+}
+.hot-sell-r{
+	width: 230px;
+	height: 250px;
+	float: left;
+	border: #dedede solid 1px;
+}
+.hot-sell-r-title{
+	width: 96%;
+	height: 39px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-align: left;
+	background-color: #2BA3D5;
+	padding-top: 9px;
+	padding-left: 10px;
+}
+.hot-sell-r-detail{
+	width: 100%;
+	height: 205px;
+	color: #2BA3D5;
+	font-size: 14px;
+}
+.hot-sell-r-detail ul{
+	list-style: none;
+	line-height: 30px;
+	padding-left: 0px;
+	padding-left: 19px;
+	padding-top: 15px;
+}
+.hot-sell-r-detail-explain{
+	width: 90%;
+	height: 50px;
+	font-size: 13px;
+	color: #2BA3D5;
+	margin-left: 19px;
+}
+.hot-sell-type-btn-bg{
+	width: 100%;
+	height: 65px;
+	padding-top: 12px;
+}
+.hot-sell-type-btn{
+	width: 122px;
+	height: 35px;
+	margin: 0 auto;
+	border-radius: 2px;
+	background-color: #009EE5;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	background: -moz-linear-gradient(left,  #17358B 0%, #3ACFF7 100%);
+    background: -webkit-gradient(linear, left, right, color-stop(0%,#17358B), color-stop(100%,#3ACFF7));
+    background: -webkit-linear-gradient(left,  #17358B 0%,#3ACFF7 100%);
+    background: -o-linear-gradient(left,  #17358B 0%,#3ACFF7 100%);
+    background: -ms-linear-gradient(tleftop,  #17358B 0%,#3ACFF7 100%);
+    background: linear-gradient(to right,  #17358B 0%,#3ACFF7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17358B', endColorstr='#3ACFF7',GradientType=0 );
+}
+
+.fun-bg{
+	width: 100%;
+	height: 417px;
+	background-image: url('../images/index/zhongjian_banner.png');
+	margin-top: 50px;
+}
+.fun-div{
+	width: 1150px;
+	height: 100%;
+	margin: 0 auto;
+}
+.fun-content{
+	float: right;
+	width: 460px;
+	height: 250px;
+	margin-top: 97px;
+}
+.fun-title{
+	width: 100%;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.fun-detail{
+	width: 100%;
+	height: 220px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 20px;
+}
+.fun-detail ul{
+	list-style: none;
+	padding-left: 0px;
+	line-height: 28px;
+}
+.trait-div{
+	width: 1150px;
+	height: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.trait-title{
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+	font-weight: 700;
+	color: #009EE5;
+	text-align: center;
+}
+.trait-title-sup{
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	color: #6D6D6D;
+	text-align: center;
+}
+.trait-types{
+	width: 100%;
+	height: auto;
+	margin-top: 45px;
+}
+.trait-type{
+	width: 190px;
+	height: 220px;
+	float: left;
+	position: relative;
+	margin-left: 120px;
+	margin-top: 50px;
+	transition:background-color .6s;
+	-moz-transition:background-color .6s;
+	-webkit-transition:background-color .6s;
+	-o-transition:background-color .6s;
+	transition:all .6s;
+	-moz-transition:all .6s;
+	-webkit-transition:all .6s;
+	-o-transition:all .6s
+}
+.trait-type-l{
+	margin-left: 0;
+}
+.trait-img{
+	width: 150px;
+	height: 140px;
+	padding: 20px;
+	text-align: center;
+}
+.trait-img img{
+	width: 138px;
+	height: 137px;
+}
+.trait-content-bg{
+	width: 190px;
+	height: 170px;
+	top: 50px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 2px;
+	background-color:#1295DB;
+	filter:alpha(opacity=0);  
+	opacity:.0;
+	-moz-opacity:.0;
+	-khtml-opacity:.0 ;
+	transition:all .5s;
+	-moz-transition:all .5s;
+	-webkit-transition:all .5s;
+	-o-transition:all .5s
+}
+.trait-content-zi{
+	font-size:15px;
+	font-weight: 700;
+	padding:0 10px;
+	overflow:hidden;
+	position:absolute;
+	top:160px;
+	color:#fff;
+	z-index:2;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all .6s;
+	-moz-transition:all .6s;
+	-webkit-transition:all .6s;
+	-o-transition:all .6s
+}
+.trait-desc{
+	width: 100%; 
+	height: 30;
+	padding-top:10px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+}
+.trait-type:hover .trait-content-bg{
+	width: 190px;
+	height: 170px;
+	top: 10px;
+	filter:alpha(opacity=90);  
+	opacity:.9;
+	-moz-opacity:.9;
+	-khtml-opacity:.9 ;
+}
+.trait-type:hover .trait-content-zi{
+	top:30px;
+	opacity:1;
+	filter:alpha(opacity=100)
+}

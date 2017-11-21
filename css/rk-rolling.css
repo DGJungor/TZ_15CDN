@@ -1,0 +1,18 @@
+.f-format{
+    background: url("../images/number.png") no-repeat;
+    width:14px;
+    height: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.f-num{
+    background-position: 0px 0px;
+}
+.f-yi{
+    background-position: 0px -200px;
+}
+.f-wan{
+    background-position: 0px -220px;
+}

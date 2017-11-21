@@ -1,0 +1,230 @@
+@CHARSET "UTF-8";
+/*
+herader
+*/
+#cdn15ct .header-5{
+	color:rgb(9, 168, 234);
+}
+.right-content{
+	width:900px;
+	height:510px;
+	padding: 30px;
+	border: 1px solid #C9C9C9;
+	margin-left:338px;
+}
+
+/* 菜单 */
+.left-menu-panel{
+	width: 278px;
+	float: left;
+	border: 1px solid #C9C9C9;
+}
+.menu-head{
+	border-left: 8px solid #63B8FF;
+	border-bottom:1px solid #63b8ff;
+	padding: 10px 10px 10px 20px;
+	height: 30px;
+	width: auto;
+	font-size:21px;
+	color: #696969;
+	font-weight:bold;
+}
+.menu-sub{
+	padding: 10px 10px 10px 47px;
+	height: 24px;
+	width: auto;
+	font-size:18px;
+	color: #696969;
+	cursor: pointer;
+}
+.menu-sub:HOVER{
+	background-color: #63B8FF;
+	color: #FFF;
+	transition:all 0.4s ease-in-out 0s;
+}
+.menu-sub-onselect{
+	background-color: #63B8FF;
+	color: #FFF;
+	transition:all 0.4s ease-in-out 0s;
+}
+
+.h1en{
+	display: block;
+	font-size: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	color: rgb(57,122,186);
+	font-weight: lighter;
+}
+.h1cn{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom:40px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.g1border-bottom{
+	border-bottom: solid 1px #C9C9C9;
+}
+.honor-pannel{
+	width: 890px;
+}
+.honor-box{
+	margin: 11px;
+	float: left;
+}
+.honor-box .img-box{
+	width: 200px;
+	height: 141px;
+}
+h2.ctitle{
+	display: block;
+	width: 280px;
+	height: 32px;
+	font-size: 19px;
+	font-weight: bold;
+}
+span.caddr{
+	display: block;
+	width: 450px;
+	height: 25px;
+}
+#mid #content-1 {
+	height: 400px;
+	min-width: 1214px;
+	background:url("../images/about/banner.jpg") no-repeat center top;
+	margin-bottom: 50px;
+}
+#mid #content-2{
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mid #content-2 #left-menu-about{
+	height: 418px;
+}
+#mid #content-2 #left-menu-about #about-cmpny{
+	height: 259px;
+}
+#mid #content-2 #left-menu-about #about-news{
+	margin-top:-1px;
+	height: 156px;
+}
+#mid #content-2 #content-about{
+	margin-bottom: 50px;
+}
+#mid #content-2 #content-about #h1about{
+	width: 132px;
+}
+#mid #content-2 #content-about #h1aboutcn{
+	width: 98px;
+}
+#mid #content-2 #content-about p{
+	text-indent: 2em;
+}
+#mid #content-2 #content-honor{
+	height: 514px;
+	border: 1px solid #C9C9C9;
+	margin-bottom: 50px;
+}
+#mid #content-2 #content-honor #h1honor{
+	width: 132px;
+}
+#mid #content-2 #content-honor #h1honorcn{
+	width: 98px;
+}
+#mid #content-2 #content-honor #honor-pannel{
+	width: 98px;
+}
+#mid #content-2 #content-contact-us{
+	margin-bottom: 50px;
+	border: 1px solid #C9C9C9;
+}
+#mid #content-2 #content-contact-us #h1contact{
+	width: 196px;
+}
+#mid #content-2 #content-contact-us #h1contactcn{
+	width: 106px;
+}
+#mid #content-2 #content-contact-us  #czipcode{
+	display: block;
+	width: 116px;
+	height: 25px;
+}
+#mid #content-2 #content-contact-us ul{
+	padding-left: 0px;
+}
+#mid #content-2 #content-contact-us  #cphone{
+	display: block;
+	width: 175px;
+	height: 25px;
+	background: url(../images/about/li.png) no-repeat 0 0px;
+	padding-left: 25px;
+}
+#mid #content-2 #content-contact-us  #cfax{
+	display: block;
+	width: 175px;
+	height: 25px;
+	background: url(../images/about/li.png) no-repeat 0 -31px;
+	padding-left: 25px;
+}
+#mid #content-2 #content-contact-us  #cmail{
+	display: block;
+	width: 210px;
+	height: 25px;
+	background: url(../images/about/li.png) no-repeat 0 -63px;
+	padding-left: 25px;
+}
+
+#mid #content-2 #content-contact-us  #cphones{
+	display: block;
+	width: 420px;
+	height: 25px;
+	background: url(../images/about/li.png) no-repeat 0 -97px;
+	padding-left: 25px;
+}
+#mid #content-2 #content-contact-us #call-us{
+	height:267px;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	float: left;
+}
+#mid #content-2 #content-contact-us #call-us #basic-addr{
+	margin-bottom: 20px;
+}
+#mid #content-2 #content-contact-us #baidu-map{
+	margin-left: 40px;
+	float: left;
+}
+
+#mid #content-2 #content-contact-us #bussness-us{
+	width: 100%;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	float: left;
+}
+
+#mid #content-2 #content-contact-us #bussness-us #cphone-again{
+	display: block;
+	width: 300px;
+	height: 25px;
+}
+#mid #content-2 #content-contact-us #bussness-us #cmail-again{
+	display: block;
+	width: 300px;
+	height: 25px;
+}
+#mid #content-2 #content-contact-us #tech-support-24h{
+	width: 100%;
+	height: 100px;
+	margin-left: 10px;
+	float: left;
+}
+#mid #content-2 #content-contact-us #tech-support-24h #cphone-tech-support{
+	display: block;
+	width: 300px;
+	height: 25px;
+}

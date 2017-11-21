@@ -1,0 +1,69 @@
+/*
+herader
+*/
+#cdn15ct .header-4{
+	color:rgb(9, 168, 234);
+}
+
+
+.user-guid{
+	width: 1300px;
+	height: auto;
+	margin:0 auto;
+	padding-top:150px;
+}
+.user-guid-step{
+	width: 278px;
+	height: 225px;
+	float: left;
+	border: 1px solid #C9C9C9;
+}
+.user-guid-step-head{
+	border-left: 8px solid #63B8FF;
+	border-bottom:1px solid #63b8ff;
+	padding: 10px 10px 10px 20px;
+	height: 30px;
+	width: auto;
+	font-size:21px;
+	color: #696969;
+	font-weight:bold;
+}
+.guids{
+	padding: 10px 10px 10px 47px;
+	height: 24px;
+	width: auto;
+	font-size:18px;
+	color: #696969;
+	cursor: pointer;
+}
+.guids:HOVER{
+	background-color: #63B8FF;
+	color: #FFF;
+	transition:all 0.4s ease-in-out 0s;
+}
+.guids-onselect{
+	background-color: #63B8FF;
+	color: #FFF;
+	transition:all 0.4s ease-in-out 0s;
+}
+.user-guid-contents{
+	width: 900px;
+	height: auto;
+	margin-left:338px;
+	border: 1px solid #696969;
+	padding: 30px;
+}
+.user-guid-content span{
+	color: #655858;
+	font-size: 19px;
+}
+.user-guid-content img{
+	margin: 30px;
+}
+.user-guid-content-step{
+	font-size: 20px;
+	font-weight: 600;
+}
+.user-guid-content-con{
+	font-size: 19px;
+}
