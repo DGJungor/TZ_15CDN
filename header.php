@@ -15,6 +15,6 @@
 					<li><a href="/about.php">关于我们</a></li>
 		 		</ul>
 	 		</div>
-	 		<div class="login"><a href="http://www.15cdn.com/cdn/login.php">登录</a>&nbsp;/&nbsp;<a href="http://www.15cdn.com/cdn/register.php">注册</a></div>
+	 		<div class="login"><a href="./cdn/login.php">登录</a>&nbsp;/&nbsp;<a href="./cdn/register.php">注册</a></div>
 	 	</div>
  	</div>

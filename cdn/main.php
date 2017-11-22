@@ -128,7 +128,7 @@ if(!FuncClient_IsLogin())
 					</ul>
 					<div class="layui-tab-content" style="min-height: 150px; padding: 5px 0 0 0;">
 						<div class="layui-tab-item layui-show">
-							<iframe src="main.html" name="right"></iframe>
+							<iframe src="info.php" name="right"></iframe>
 						</div>
 					</div>
 				</div>

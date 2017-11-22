@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4309378b-e83e-48cd-b8c4-1d2e2e01243e" name="默认" comment="" />
+    <list default="true" id="4309378b-e83e-48cd-b8c4-1d2e2e01243e" name="默认" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cdn/main.php" afterPath="$PROJECT_DIR$/cdn/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config_global.php" afterPath="$PROJECT_DIR$/config/config_global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,29 +16,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ajax.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cdn/ajax.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1510815642231" expanded="true" signature="1300:1354" ph="SELECT * FRO... fikcdn_client" />
-                <marker date="1510815642231" expanded="true" signature="1877:1957" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="4044:4142" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="4198:4299" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="4365:4428" ph="SELECT belon... fikcdn_admin" />
-                <marker date="1510815642231" expanded="true" signature="4536:4641" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="4698:4806" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="4876:5054" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="6229:6316" ph="SELECT * FRO... fikcdn_admin" />
-                <marker date="1510815642231" expanded="true" signature="6624:6670" ph="DELETE FROM " />
-                <marker date="1510815642231" expanded="true" signature="6714:6742" ph="DELETE FROM " />
-                <marker date="1510815642231" expanded="true" signature="9263:9348" ph="SELECT * FRO... fikcdn_admin" />
-                <marker date="1510815642231" expanded="true" signature="9587:9644" ph="SELECT * FRO... fikcdn_client" />
-                <marker date="1510815642231" expanded="true" signature="9884:9958" ph="UPDATE fikcd... " />
-                <marker date="1510815642231" expanded="true" signature="10170:10227" ph="SELECT * FRO... fikcdn_client" />
-                <marker date="1510815642231" expanded="true" signature="10553:10807" ph="INSERT INTO fikcdn_recharge... " />
+                <marker date="1510815642253" expanded="true" signature="2816:2871" ph="SELECT * FRO... fikcdn_client" />
+                <marker date="1510815642253" expanded="true" signature="3213:3278" ph="SELECT belon... fikcdn_admin" />
+                <marker date="1510815642253" expanded="true" signature="3460:3761" ph="INSERT INTO fikcdn_client... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buy_history.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/buy_history.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510815642256" expanded="true" signature="3823:3919" ph="SELECT count... fikcdn_buyhistory" />
+                <marker date="1510815642256" expanded="true" signature="3954:4026" ph="SELECT count... fikcdn_buyhistory" />
+                <marker date="1510815642256" expanded="true" signature="4694:4815" ph="SELECT * FRO... fikcdn_buyhistory" />
+                <marker date="1510815642256" expanded="true" signature="4872:4969" ph="SELECT * FRO... fikcdn_buyhistory" />
+                <marker date="1510815642256" expanded="true" signature="6080:6123" ph="SELECT * FRO... fikcdn_buy" />
+                <marker date="1510815642256" expanded="true" signature="6300:6351" ph="SELECT * FRO... fikcdn_product" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/head2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_copy.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/index_copy.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,8 +90,8 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="176">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -50,32 +99,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/db.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cdn/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state relative-caret-position="326">
+              <caret line="130" column="49" lean-forward="false" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
-              <caret line="180" column="33" lean-forward="true" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>15cdn</find>
+      <find>main.html</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cdn/main.html" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/config/config_global.php" />
+        <option value="$PROJECT_DIR$/cdn/info.php" />
+        <option value="$PROJECT_DIR$/cdn/main.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -84,11 +161,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-55" />
-    <option name="y" value="868" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="741" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -113,6 +190,16 @@
             <path>
               <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
               <item name="fikcdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fikcdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fikcdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -147,33 +234,34 @@
       <option name="presentableId" value="Default" />
       <updated>1510815877072</updated>
       <workItem from="1510815879748" duration="3708000" />
-      <workItem from="1511245358836" duration="1291000" />
+      <workItem from="1511245358836" duration="8197000" />
+      <workItem from="1511312592039" duration="2039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4999000" />
+    <option name="totallyTimeSpent" value="13944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-55" y="868" width="1936" height="741" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -188,199 +276,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admintzgl/buy_list_expire2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643602" expanded="true" signature="8254:8381" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8456:8616" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8701:8769" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8844:8944" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="9661:9817" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="9913:10100" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="10206:10301" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="10397:10524" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="11700:11751" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643602" expanded="true" signature="12708:13334" ph="..." />
-            <marker date="1510815643602" expanded="true" signature="12820:12826" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="12945:12951" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="13069:13075" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="13189:13195" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815644801" expanded="true" signature="2172:2220" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/login_fikker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815644802" expanded="true" signature="544:579" ph="SELECT * FRO... fikcdn_node" />
-            <marker date="1510815644802" expanded="true" signature="2547:2612" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="3150:3196" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="3536:3582" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="4008:4175" ph="UPDATE fikcd... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cdn-bak/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815642098" expanded="true" signature="4012:4060" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/buy_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643593" expanded="true" signature="8028:8120" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="8195:8320" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="8404:8435" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="8510:8575" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="9292:9416" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="9512:9668" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="9774:9836" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="9932:10028" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643593" expanded="true" signature="11204:11255" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643593" expanded="true" signature="12873:13632" ph="..." />
-            <marker date="1510815643593" expanded="true" signature="12985:12991" ph=" " />
-            <marker date="1510815643593" expanded="false" signature="13110:13116" ph=" " />
-            <marker date="1510815643593" expanded="false" signature="13234:13240" ph=" " />
-            <marker date="1510815643593" expanded="false" signature="13356:13362" ph=" " />
-            <marker date="1510815643593" expanded="false" signature="13487:13493" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/buy_list2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643594" expanded="true" signature="8573:8700" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="8775:8935" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="9019:9087" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="9162:9262" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="9980:10135" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="10231:10418" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="10524:10619" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="10715:10842" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643594" expanded="true" signature="12018:12069" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643594" expanded="true" signature="13022:13648" ph="..." />
-            <marker date="1510815643594" expanded="true" signature="13134:13140" ph=" " />
-            <marker date="1510815643594" expanded="false" signature="13259:13265" ph=" " />
-            <marker date="1510815643594" expanded="false" signature="13383:13389" ph=" " />
-            <marker date="1510815643594" expanded="false" signature="13503:13509" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admintzgl/buy_list3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="49" lean-forward="true" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
-          <folding>
-            <marker date="1510815643597" expanded="true" signature="8372:8534" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="8609:8804" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="8888:8991" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="9066:9201" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="9945:10134" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="10231:10452" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="10559:10688" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="10785:10946" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643597" expanded="true" signature="12193:12244" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643597" expanded="true" signature="13207:13609" ph="..." />
-            <marker date="1510815643597" expanded="false" signature="13329:13335" ph=" " />
-            <marker date="1510815643597" expanded="false" signature="13454:13460" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cdn-bak/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
-          <caret line="98" column="20" lean-forward="true" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding>
-            <marker date="1510815642100" expanded="true" signature="2210:2258" ph="..." />
-            <marker date="1510815642100" expanded="true" signature="7515:7521" ph=" " />
-            <marker date="1510815642100" expanded="true" signature="7521:7527" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/default-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3212">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/checkcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/define.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/fik_api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815641226" expanded="true" signature="5676:5723" ph="UPDATE fikcd... " />
-            <marker date="1510815641226" expanded="true" signature="6005:6052" ph="UPDATE fikcd... " />
-            <marker date="1510815641226" expanded="true" signature="6558:6726" ph="UPDATE fikcd... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,32 +311,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3498">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3234">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <marker date="1510815642331" expanded="true" signature="1257:1273" ph="..." />
-            <marker date="1510815642331" expanded="true" signature="7128:7183" ph="SELECT usern... fikcdn_admin" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/alipay_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -448,20 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config_global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admintzgl/admin_info.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1716">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643568" expanded="true" signature="1102:1161" ph="SELECT * FRO... fikcdn_admin" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,9 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643570" expanded="true" signature="2972:3031" ph="SELECT * FRO... fikcdn_admin" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,9 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643571" expanded="true" signature="1808:1844" ph="SELECT * FRO... fikcdn_admin" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,22 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643607" expanded="true" signature="8330:8422" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="8497:8622" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="8706:8737" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="8812:8877" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="9594:9712" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="9808:9958" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="10064:10120" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="10216:10306" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643607" expanded="true" signature="11482:11533" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643607" expanded="true" signature="13143:13769" ph="..." />
-            <marker date="1510815643607" expanded="true" signature="13255:13261" ph=" " />
-            <marker date="1510815643607" expanded="false" signature="13380:13386" ph=" " />
-            <marker date="1510815643607" expanded="false" signature="13504:13510" ph=" " />
-            <marker date="1510815643607" expanded="false" signature="13624:13630" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,22 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815643602" expanded="true" signature="8254:8381" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8456:8616" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8701:8769" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="8844:8944" ph="SELECT count... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="9661:9817" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="9913:10100" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="10206:10301" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="10397:10524" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815643602" expanded="true" signature="11700:11751" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815643602" expanded="true" signature="12708:13334" ph="..." />
-            <marker date="1510815643602" expanded="true" signature="12820:12826" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="12945:12951" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="13069:13075" ph=" " />
-            <marker date="1510815643602" expanded="false" signature="13189:13195" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,9 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815644801" expanded="true" signature="2172:2220" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,13 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815644802" expanded="true" signature="544:579" ph="SELECT * FRO... fikcdn_node" />
-            <marker date="1510815644802" expanded="true" signature="2547:2612" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="3150:3196" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="3536:3582" ph="UPDATE fikcd... " />
-            <marker date="1510815644802" expanded="true" signature="4008:4175" ph="UPDATE fikcd... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510815642098" expanded="true" signature="4012:4060" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,11 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2038">
           <caret line="98" column="20" lean-forward="true" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding>
-            <marker date="1510815642100" expanded="true" signature="2210:2258" ph="..." />
-            <marker date="1510815642100" expanded="true" signature="7515:7521" ph=" " />
-            <marker date="1510815642100" expanded="true" signature="7521:7527" ph=" " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -688,6 +497,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1741">
+          <caret line="470" column="9" lean-forward="false" selection-start-line="470" selection-start-column="9" selection-end-line="470" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/alipay_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/171121162115.sql">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/fik_api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815641226" expanded="true" signature="5676:5723" ph="UPDATE fikcd... " />
+            <marker date="1510815641226" expanded="true" signature="6005:6052" ph="UPDATE fikcd... " />
+            <marker date="1510815641226" expanded="true" signature="6558:6726" ph="UPDATE fikcd... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/pub_function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="113" column="9" lean-forward="false" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/ajax_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="120" column="22" lean-forward="false" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <folding>
+            <marker date="1510815642240" expanded="true" signature="1386:1473" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642240" expanded="true" signature="2315:2452" ph="UPDATE fikcd... " />
+            <marker date="1510815642240" expanded="true" signature="2577:2735" ph="INSERT INTO fikcdn_login_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,31 +609,249 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="86" lean-forward="false" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config_global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/main_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/main_right.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/main_top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/modifypasswd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815642306" expanded="true" signature="6922:6933" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/msg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815642309" expanded="true" signature="720:742" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="778:793" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="866:872" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="872:878" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="878:884" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="884:890" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="890:896" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="961:983" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1019:1034" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1228:1250" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1286:1301" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1373:1379" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1379:1385" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1385:1391" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1391:1397" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1397:1403" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1468:1490" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1526:1541" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1736:1758" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1794:1809" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="1883:1889" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1889:1895" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1895:1901" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1901:1907" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1907:1913" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="1978:2000" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2036:2051" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2245:2267" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2303:2318" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2390:2396" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2396:2402" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2402:2408" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2408:2414" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2414:2420" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2485:2507" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2543:2558" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2763:2785" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2823:2838" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="2914:2920" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2920:2926" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2926:2932" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2932:2938" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="2938:2944" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3009:3031" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3067:3082" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3277:3299" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3335:3350" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3428:3434" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3434:3440" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3440:3446" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3446:3452" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3452:3458" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3523:3545" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3581:3596" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3793:3815" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3851:3866" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="3943:3949" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3949:3955" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3955:3961" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3961:3967" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="3967:3973" ph=" " />
+            <marker date="1510815642309" expanded="true" signature="4038:4060" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="4096:4111" ph="..." />
+            <marker date="1510815642309" expanded="true" signature="4362:4377" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/notify_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815642311" expanded="true" signature="1518:1578" ph="SELECT * FRO... fikcdn_recharge" />
+            <marker date="1510815642311" expanded="true" signature="2358:2412" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642311" expanded="true" signature="3158:3233" ph="UPDATE fikcd... " />
+            <marker date="1510815642311" expanded="true" signature="3384:3438" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642311" expanded="true" signature="3654:3764" ph="UPDATE fikcd... " />
+            <marker date="1510815642311" expanded="true" signature="4387:4447" ph="SELECT * FRO... fikcdn_recharge" />
+            <marker date="1510815642311" expanded="true" signature="5227:5281" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642311" expanded="true" signature="6023:6098" ph="UPDATE fikcd... " />
+            <marker date="1510815642311" expanded="true" signature="6249:6303" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642311" expanded="true" signature="6519:6629" ph="UPDATE fikcd... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1232">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <marker date="1510815642331" expanded="true" signature="1257:1273" ph="..." />
+            <marker date="1510815642331" expanded="true" signature="7128:7183" ph="SELECT usern... fikcdn_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/head2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/index_copy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815642253" expanded="true" signature="2816:2871" ph="SELECT * FRO... fikcdn_client" />
+            <marker date="1510815642253" expanded="true" signature="3213:3278" ph="SELECT belon... fikcdn_admin" />
+            <marker date="1510815642253" expanded="true" signature="3460:3761" ph="INSERT INTO fikcdn_client... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/buy_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510815642256" expanded="true" signature="3823:3919" ph="SELECT count... fikcdn_buyhistory" />
+            <marker date="1510815642256" expanded="true" signature="3954:4026" ph="SELECT count... fikcdn_buyhistory" />
+            <marker date="1510815642256" expanded="true" signature="4694:4815" ph="SELECT * FRO... fikcdn_buyhistory" />
+            <marker date="1510815642256" expanded="true" signature="4872:4969" ph="SELECT * FRO... fikcdn_buyhistory" />
+            <marker date="1510815642256" expanded="true" signature="6080:6123" ph="SELECT * FRO... fikcdn_buy" />
+            <marker date="1510815642256" expanded="true" signature="6300:6351" ph="SELECT * FRO... fikcdn_product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="176">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/db.php">
+    <entry file="file://$PROJECT_DIR$/cdn/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="220">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/cdn/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="180" column="33" lean-forward="true" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="130" column="49" lean-forward="false" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
