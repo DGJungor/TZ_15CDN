@@ -23,5 +23,6 @@ function FuncClient_LocationLogin()
 	header("Location:login.php");
 }
 
+date_default_timezone_set('PRC');
 
 ?>
