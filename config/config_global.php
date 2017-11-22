@@ -13,6 +13,7 @@ $_config['db']['1']['dbname'] = 'fikcdn';
 $_config['db']['1']['tablepre'] = 'fikcdn_';
 
 
+
 $FikCdnCookiePaht	= "/";
 
 $StatData_KeepDay = 7;
