@@ -4,10 +4,8 @@ include_once("../config/PDO_config.php");
 if (!FuncClient_IsLogin()) {
     FuncClient_LocationLogin();
 }
-echo '<pre>';
-var_dump($_SESSION);
-echo '</pre>';
-//die();
+
+
 $client_username = $_SESSION['fikcdn_client_username'];
 $userPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
 //$sql = "SELECT count(*) FROM fikcdn_buy WHERE username='$client_username';";
@@ -28,34 +26,50 @@ $sth = $userPDO->query($sql);
 //$aa = $sth->execute();
 $userItems = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-$_SESSION['userInfo']['id'] = $userItems[0]['id'];
-$_SESSION['userInfo']['name'] = $userItems[0]['name'].'_'.$userItems[0]['id'];
+$_SESSION['userInfo']['buy_id'] = $userItems[0]['id'];
+$_SESSION['userInfo']['name'] = $userItems[0]['name'] . '_' . $userItems[0]['id'];
 
 foreach ($userItems as $k => $v) {
-    echo $v['name'].'_'.$v['id'];
+    echo $v['name'] . '_' . $v['id'];
 
 }
 
-$buyID = $_SESSION['userInfo']['id'];
+$buyID = $_SESSION['userInfo']['buy_id'];
 $buyID = 21;
 
 
 $sqlDNSNum = "SELECT
 count(*)
 FROM
-fikcdn_buy ,
-fikcdn_domain
+fikcdn_buy b
+left join  fikcdn_domain d on b.id = d.buy_id
 WHERE
-fikcdn_domain.buy_id = '$buyID'
+d.buy_id = '$buyID'
 ";
 
 $sthDNS = $userPDO->query($sqlDNSNum);
 //$aa = $sth->execute();
 $sth = $sthDNS->fetchAll(PDO::FETCH_ASSOC);
 $dnsNum = $sth[0]['count(*)'];
+
+
+
+//获取本月总流量
+$sqlMonthCount = "
+";
+
+//获取本月时间戳
+$beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
+
+//--------------------------------打印数据
+
+echo '<pre>';
+var_dump($_SESSION);
+echo '</pre>';
+
 echo '<pre>';
 var_dump($sth);
-echo $sth[0]['count(*)'];
+echo $beginThismonth;
 echo '</pre>';
 ?>
 
@@ -69,7 +83,7 @@ echo '</pre>';
     <title>Document</title>
 
 
-<!--    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>-->
+    <!--    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>-->
     <!--    <link rel="stylesheet" href="./plugins/layui2/css/layui.css?t=1504112998306" media="all">-->
     <link rel="stylesheet" href="./plugins/layui2/css/layui.css">
 
@@ -91,8 +105,8 @@ echo '</pre>';
             <?php
             foreach ($userItems as $k => $v) {
                 ?>
-                <dd><a href="./info_c.php?c=<?php echo $v['id'] ?>"><?php echo $v['name'].'_'.$v['id']; ?></a></dd>
-            <?php
+                <dd><a href="./info_c.php?c=<?php echo $v['id'] ?>"><?php echo $v['name'] . '_' . $v['id']; ?></a></dd>
+                <?php
             }
             ?>
 
@@ -116,7 +130,7 @@ echo '</pre>';
                     <div class="layui-row">
                         <div class="layui-col-md6">
                             <div>
-                                <h2>接入域名  <?php echo $sth[0]['count(*)'];  ?>个</h2>
+                                <h2>接入域名 <?php echo $sth[0]['count(*)']; ?>个</h2>
                             </div>
                         </div>
                         <div class="layui-col-md6">
