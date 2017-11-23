@@ -6,72 +6,28 @@ if (!FuncClient_IsLogin()) {
 }
 
 
-$client_username = $_SESSION['fikcdn_client_username'];
-$userPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
-//$sql = "SELECT count(*) FROM fikcdn_buy WHERE username='$client_username';";
-//$sql = "SELECT * FROM fikcdn_buy b JOIN IN fikcdn_product p ON b.product_id=p.id WHERE  b.username='$client_username' ";
-$sql = "SELECT
-fikcdn_product.`name`,
-fikcdn_buy.id
-FROM
-	fikcdn_buy,
-	fikcdn_product
-WHERE
-fikcdn_buy.product_id = fikcdn_product.id 
-AND 
-fikcdn_buy.username='$client_username'
- ";
-//$sql = "SELECT * FROM fikcdn_buy WHERE username='$client_username'  ";
-$sth = $userPDO->query($sql);
-//$aa = $sth->execute();
-$userItems = $sth->fetchAll(PDO::FETCH_ASSOC);
-
-$_SESSION['userInfo']['buy_id'] = $userItems[0]['id'];
-$_SESSION['userInfo']['name'] = $userItems[0]['name'] . '_' . $userItems[0]['id'];
-
-foreach ($userItems as $k => $v) {
-    echo $v['name'] . '_' . $v['id'];
-
-}
-
-$buyID = $_SESSION['userInfo']['buy_id'];
-$buyID = 21;
 
 
-$sqlDNSNum = "SELECT
-count(*)
-FROM
-fikcdn_buy b
-left join  fikcdn_domain d on b.id = d.buy_id
-WHERE
-d.buy_id = '$buyID'
-";
+$userItems = $_SESSION['userInfo']['userItems'];
 
-$sthDNS = $userPDO->query($sqlDNSNum);
-//$aa = $sth->execute();
-$sth = $sthDNS->fetchAll(PDO::FETCH_ASSOC);
-$dnsNum = $sth[0]['count(*)'];
-
-
-
-//获取本月总流量
-$sqlMonthCount = "
-";
-
-//获取本月时间戳
-$beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
+////获取本月总流量
+//$sqlMonthCount = "
+//";
+//
+////获取本月时间戳
+//$beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
 
 //--------------------------------打印数据
 
-echo '<pre>';
-var_dump($_SESSION);
-echo '</pre>';
-
-echo '<pre>';
-var_dump($sth);
-echo $beginThismonth;
-echo '</pre>';
-?>
+//echo '<pre>';
+//var_dump($_SESSION);
+//echo '</pre>';
+//
+//echo '<pre>';
+//var_dump($sth);
+////echo $beginThismonth;
+//echo '</pre>';
+//?>
 
 <!doctype html>
 <html lang="en">
@@ -130,12 +86,12 @@ echo '</pre>';
                     <div class="layui-row">
                         <div class="layui-col-md6">
                             <div>
-                                <h2>接入域名 <?php echo $sth[0]['count(*)']; ?>个</h2>
+                                <h2>接入域名 <?php echo $_SESSION['userInfo']['cdnNum']; ?>个</h2>
                             </div>
                         </div>
                         <div class="layui-col-md6">
                             <div>
-                                <h2>本月总流量</h2>
+                                <h2>本月总流量  <?php echo  isset($_SESSION['userInfo']['monthCount']) ? $_SESSION['userInfo']['monthCount'] : '0' ; ?> G</h2>
                             </div>
                         </div>
                     </div>
@@ -155,13 +111,13 @@ echo '</pre>';
                     <div class="layui-row">
 
                         <div class="layui-col-md4">
-                            你的内容 9/12
+                            实时宽带
                         </div>
                         <div class="layui-col-md4">
-                            你的内容 9/12
+                            今日流量
                         </div>
                         <div class="layui-col-md4">
-                            你的内容 9/12
+                            今日请求数量
                         </div>
 
                     </div>
@@ -208,6 +164,12 @@ echo '</pre>';
         //…
     });
 
+    setTimeout("fmPost()",1000)
+    function fmPost(){alert("j");
+        location.reload();
+
+    }
+
 
 </script>
 
@@ -215,9 +177,9 @@ echo '</pre>';
 </html>
 
 
-<div class="ibox-content">
-    <h1 class="no-margins">40 886,200</h1>
-    <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i>
-    </div>
-    <small>总收入</small>
-</div>
+<!--<div class="ibox-content">-->
+<!--    <h1 class="no-margins">40 886,200</h1>-->
+<!--    <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i>-->
+<!--    </div>-->
+<!--    <small>总收入</small>-->
+<!--</div>-->
