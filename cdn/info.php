@@ -6,9 +6,8 @@ if (!FuncClient_IsLogin()) {
 }
 
 
-
-
 $userItems = $_SESSION['userInfo']['userItems'];
+
 
 ////获取本月总流量
 //$sqlMonthCount = "
@@ -39,12 +38,12 @@ $userItems = $_SESSION['userInfo']['userItems'];
     <title>Document</title>
 
 
-    <!--    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>-->
+        <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <!--    <link rel="stylesheet" href="./plugins/layui2/css/layui.css?t=1504112998306" media="all">-->
     <link rel="stylesheet" href="./plugins/layui2/css/layui.css">
 
 
-    <!--    <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
+<!--        <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
     <script src="./plugins/layui2/layui.all.js"></script>
 
 
@@ -59,10 +58,13 @@ $userItems = $_SESSION['userInfo']['userItems'];
         <a href="javascript:;">全部项目</a>
         <dl class="layui-nav-child"> <!-- 二级菜单 -->
             <?php
+            $i=0;
             foreach ($userItems as $k => $v) {
+
                 ?>
-                <dd><a href="./info_c.php?c=<?php echo $v['id'] ?>"><?php echo $v['name'] . '_' . $v['id']; ?></a></dd>
+                <dd><a href="./info_c.php?id=<?php echo $v['id'] ?>&i=<?php echo $i;?>"><?php echo $v['name'] . '_' . $v['id']; ?></a></dd>
                 <?php
+                $i++;
             }
             ?>
 
@@ -91,7 +93,9 @@ $userItems = $_SESSION['userInfo']['userItems'];
                         </div>
                         <div class="layui-col-md6">
                             <div>
-                                <h2>本月总流量  <?php echo  isset($_SESSION['userInfo']['monthCount']) ? $_SESSION['userInfo']['monthCount'] : '0' ; ?> G</h2>
+                                <h2>
+                                    本月总流量 <?php echo isset($_SESSION['userInfo']['monthCount']) ? $_SESSION['userInfo']['monthCount'] : '0'; ?>
+                                    G</h2>
                             </div>
                         </div>
                     </div>
@@ -164,9 +168,26 @@ $userItems = $_SESSION['userInfo']['userItems'];
         //…
     });
 
-    setTimeout("fmPost()",1000)
-    function fmPost(){alert("j");
-        location.reload();
+    setTimeout("fmPost()", 1000)
+
+    function fmPost() {
+//        alert("j");
+//        location.reload();
+
+        $.ajax({
+            type: "POST",
+            url: "./ajax_info.php",
+            data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'bandwidth'},
+            dataType: "json",
+            success: function (msg) {
+//                if (msg.code == 1) {
+//                    layer.msg('已开启');
+//                    obj.update({
+//                        stateCN: '开启',
+//                    });
+//                }
+            },
+        })
 
     }
 

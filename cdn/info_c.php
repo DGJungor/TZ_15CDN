@@ -6,6 +6,8 @@ if (!FuncClient_IsLogin()) {
     FuncClient_LocationLogin();
 }
 
+
+
 $client_username = $_SESSION['fikcdn_client_username'];
 $userPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
 //$sql = "SELECT count(*) FROM fikcdn_buy WHERE username='$client_username';";
@@ -26,8 +28,8 @@ $sth = $userPDO->query($sql);
 //$aa = $sth->execute();
 $userItems = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-$_SESSION['userInfo']['buy_id'] = $userItems[0]['id'];
-$_SESSION['userInfo']['name'] = $userItems[0]['name'] . '_' . $userItems[0]['id'];
+$_SESSION['userInfo']['buy_id'] = $userItems[$_GET['i']]['id'];
+$_SESSION['userInfo']['name'] = $userItems[$_GET['i']]['name'] . '_' . $userItems[$_GET['i']]['id'];
 $_SESSION['userInfo']['userItems'] = $userItems;
 
 
@@ -39,8 +41,10 @@ $_SESSION['userInfo']['userItems'] = $userItems;
 if(empty($_GET['id']))
 {
     $buyID = $_SESSION['userInfo']['buy_id'];
+
 }else{
     $buyID = $_GET['id'];
+
 }
 
 
@@ -125,7 +129,7 @@ echo '</pre>';
 
 
 
-//Header("Location: ./info.php");
+Header("Location: ./info.php");
 
 
 ?>
