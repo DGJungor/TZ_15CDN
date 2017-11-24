@@ -45,6 +45,8 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
     <!--        <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
     <script src="./plugins/layui2/layui.all.js"></script>
+    <script src="./js/echarts.min.js"></script>
+
 
 
 </head>
@@ -150,7 +152,15 @@ $userItems = $_SESSION['userInfo']['userItems'];
         <div class="layui-collapse">
             <div class="layui-colla-item">
                 <h2 class="layui-colla-title">CDN流量本月趋势</h2>
-                <div class="layui-colla-content layui-show">内容区域</div>
+                <div class="layui-colla-content layui-show">
+
+
+
+                    <div id="main" style="width:100%; height: 400px;"></div>
+
+
+
+                </div>
             </div>
         </div>
 
@@ -242,6 +252,35 @@ $userItems = $_SESSION['userInfo']['userItems'];
     }
 
 
+</script>
+
+<script type="text/javascript">
+    //指定图标的配置和数据
+    var option = {
+        title:{
+            text:'流量统计'
+        },
+        tooltip:{},
+        legend:{
+            data:['用户来源']
+        },
+        xAxis:{
+            data:["Android","IOS","PC","Ohter","IOS","PC","Ohter","IOS","PC","Ohter"]
+        },
+        yAxis:{
+
+        },
+        series:[{
+            name:'访问量',
+            type:'line',
+            data:[500,200,360,100,200,360,100,200,360,100]
+        }]
+    };
+    //初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    //使用制定的配置项和数据显示图表
+    myChart.setOption(option);
 </script>
 
 </body>

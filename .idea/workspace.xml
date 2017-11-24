@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7af43f1-a8a8-4dff-ae7d-7a05f1b221fc" name="默认" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cdn/ajax_info.php" afterPath="$PROJECT_DIR$/cdn/ajax_info.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cdn/info.php" afterPath="$PROJECT_DIR$/cdn/info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cdn/info_c.php" afterPath="$PROJECT_DIR$/cdn/info_c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cdn/main.php" afterPath="$PROJECT_DIR$/cdn/main.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="info_c.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/info_c.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2213">
-              <caret line="142" column="17" lean-forward="false" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="18" />
+            <state relative-caret-position="211">
+              <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <marker date="1511501686115" expanded="true" signature="522:692" ph="SELECT fikcd... fikcdn_buy" />
                 <marker date="1511501686115" expanded="true" signature="1547:1652" ph="SELECT count... fikcdn_buy" />
@@ -35,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax_info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/ajax_info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+            <state relative-caret-position="475">
+              <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <marker date="1511508675574" expanded="true" signature="499:866" ph="SELECT domai... domain_stat_product_bandwidth" />
                 <marker date="1511508675574" expanded="true" signature="1255:1534" ph="SELECT domai... domain_stat_product_bandwidth" />
@@ -52,10 +49,9 @@
       <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="212" column="91" lean-forward="true" selection-start-line="212" selection-start-column="91" selection-end-line="212" selection-end-column="91" />
+            <state relative-caret-position="576">
+              <caret line="275" column="57" lean-forward="false" selection-start-line="275" selection-start-column="57" selection-end-line="275" selection-end-column="57" />
               <folding>
-                <element signature="e#0#5#0#PHP" expanded="false" />
                 <element signature="e#78#140#0#PHP" expanded="false" />
                 <element signature="e#194#205#0#PHP" expanded="false" />
                 <element signature="e#350#365#0#PHP" expanded="false" />
@@ -63,12 +59,12 @@
                 <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#dl#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#1550#1555#0#PHP" expanded="false" />
-                <element signature="e#1588#1879#0#PHP" expanded="false" />
-                <element signature="e#1709#1714#0#PHP" expanded="false" />
-                <element signature="e#1734#1739#0#PHP" expanded="false" />
-                <element signature="e#1753#1758#0#PHP" expanded="false" />
-                <element signature="e#2106#2111#0#PHP" expanded="false" />
+                <element signature="e#1599#1604#0#PHP" expanded="false" />
+                <element signature="e#1637#1928#0#PHP" expanded="false" />
+                <element signature="e#1758#1763#0#PHP" expanded="false" />
+                <element signature="e#1783#1788#0#PHP" expanded="false" />
+                <element signature="e#1802#1807#0#PHP" expanded="false" />
+                <element signature="e#2155#2160#0#PHP" expanded="false" />
                 <element signature="n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -76,19 +72,49 @@
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#2562#2567#0#PHP" expanded="false" />
+                <element signature="e#2611#2616#0#PHP" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#2846#2851#0#PHP" expanded="false" />
-                <element signature="n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#4622#5019#0#HTML" expanded="false" />
-                <element signature="e#4747#4998#0#HTML" expanded="false" />
-                <element signature="e#5027#5059#0#HTML" expanded="false" />
-                <element signature="e#5211#5232#0#HTML" expanded="false" />
-                <element signature="e#5371#5376#0#PHP" expanded="false" />
+                <element signature="e#2895#2900#0#PHP" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#4767#5164#0#HTML" expanded="false" />
+                <element signature="e#4892#5143#0#HTML" expanded="false" />
+                <element signature="e#5172#5204#0#HTML" expanded="false" />
+                <element signature="e#5356#5377#0#HTML" expanded="false" />
+                <element signature="e#5516#5521#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info_stat.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cdn/info_stat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="739">
+              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+              <folding>
+                <marker date="1511515631665" expanded="true" signature="523:793" ph="SELECT domai... domain_stat_product_day" />
+                <marker date="1511515631665" expanded="true" signature="523:835" ph="SELECT domai... domain_stat_product_day" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stat_buy_product_bandwidth_max.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth_max.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="655" column="49" lean-forward="true" selection-start-line="655" selection-start-column="49" selection-end-line="655" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1510815642344" expanded="true" signature="4715:4773" ph="SELECT * FRO... fikcdn_buy" />
+                <marker date="1510815642344" expanded="true" signature="5367:5423" ph="SELECT * FRO... fikcdn_product" />
+                <marker date="1510815642344" expanded="true" signature="6237:6392" ph="SELECT max(b... domain_stat_product_max_bandwidth" />
+                <marker date="1510815642344" expanded="true" signature="7505:7622" ph="SELECT max(b... domain_stat_product_max_bandwidth" />
+                <marker date="1510815642344" expanded="true" signature="12898:13033" ph="SELECT * FRO... domain_stat_product_day" />
               </folding>
             </state>
           </provider>
@@ -97,7 +123,7 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="219">
               <caret line="130" column="49" lean-forward="false" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
               <folding />
             </state>
@@ -137,9 +163,10 @@
       <file leaf-file-name="stat_buy_product_bandwidth.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6908">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="143">
+              <caret line="708" column="16" lean-forward="false" selection-start-line="708" selection-start-column="16" selection-end-line="771" selection-end-column="22" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <marker date="1510815642342" expanded="true" signature="4691:4749" ph="SELECT * FRO... fikcdn_buy" />
                 <marker date="1510815642342" expanded="true" signature="5326:5382" ph="SELECT * FRO... fikcdn_product" />
                 <marker date="1510815642342" expanded="true" signature="6216:6367" ph="SELECT max(b... domain_stat_product_bandwidth" />
@@ -155,6 +182,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>info.php</find>
+      <find>rk</find>
+      <find>日流量统计</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -172,8 +201,9 @@
         <option value="$PROJECT_DIR$/config/PDO_config.php" />
         <option value="$PROJECT_DIR$/cdn/main.php" />
         <option value="$PROJECT_DIR$/cdn/info_c.php" />
-        <option value="$PROJECT_DIR$/cdn/info.php" />
         <option value="$PROJECT_DIR$/cdn/ajax_info.php" />
+        <option value="$PROJECT_DIR$/cdn/info.php" />
+        <option value="$PROJECT_DIR$/cdn/info_stat.php" />
       </list>
     </option>
   </component>
@@ -185,8 +215,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="693" />
-    <option name="y" value="32" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="954" />
   </component>
@@ -218,6 +248,12 @@
               <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
               <item name="fikcdn" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fikcdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fikcdn" type="b2602c69:ProjectViewProjectNode" />
@@ -268,12 +304,12 @@
       <workItem from="1511312592039" duration="10553000" />
       <workItem from="1511329189396" duration="13270000" />
       <workItem from="1511413592426" duration="12761000" />
-      <workItem from="1511485495706" duration="17599000" />
+      <workItem from="1511485495706" duration="24145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66088000" />
+    <option name="totallyTimeSpent" value="72634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -309,13 +345,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cdn/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -488,14 +517,6 @@
             <marker date="1510815642352" expanded="true" signature="7314:7430" ph="SELECT max(b... domain_stat_host_bandwidth" />
             <marker date="1510815642352" expanded="true" signature="12570:12701" ph="SELECT * FRO... domain_stat_host_bandwidth" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth_max.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,45 +909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/info_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2213">
-          <caret line="142" column="17" lean-forward="false" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="18" />
-          <folding>
-            <marker date="1511501686115" expanded="true" signature="522:692" ph="SELECT fikcd... fikcdn_buy" />
-            <marker date="1511501686115" expanded="true" signature="1547:1652" ph="SELECT count... fikcdn_buy" />
-            <marker date="1511501686115" expanded="true" signature="1997:2233" ph="SELECT domai... domain_stat_month" />
-            <marker date="1511501686115" expanded="true" signature="1997:2253" ph="SELECT domai... domain_stat_month" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6908">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding>
-            <marker date="1510815642342" expanded="true" signature="4691:4749" ph="SELECT * FRO... fikcdn_buy" />
-            <marker date="1510815642342" expanded="true" signature="5326:5382" ph="SELECT * FRO... fikcdn_product" />
-            <marker date="1510815642342" expanded="true" signature="6216:6367" ph="SELECT max(b... domain_stat_product_bandwidth" />
-            <marker date="1510815642342" expanded="true" signature="7458:7571" ph="SELECT max(b... domain_stat_product_bandwidth" />
-            <marker date="1510815642342" expanded="true" signature="12330:12458" ph="SELECT * FRO... domain_stat_product_bandwidth" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/pub_function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="156" column="9" lean-forward="false" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -941,18 +927,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cdn/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="219">
           <caret line="130" column="49" lean-forward="false" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="708" column="16" lean-forward="false" selection-start-line="708" selection-start-column="16" selection-end-line="771" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1510815642342" expanded="true" signature="4691:4749" ph="SELECT * FRO... fikcdn_buy" />
+            <marker date="1510815642342" expanded="true" signature="5326:5382" ph="SELECT * FRO... fikcdn_product" />
+            <marker date="1510815642342" expanded="true" signature="6216:6367" ph="SELECT max(b... domain_stat_product_bandwidth" />
+            <marker date="1510815642342" expanded="true" signature="7458:7571" ph="SELECT max(b... domain_stat_product_bandwidth" />
+            <marker date="1510815642342" expanded="true" signature="12330:12458" ph="SELECT * FRO... domain_stat_product_bandwidth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/pub_function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="156" column="9" lean-forward="false" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/info_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <marker date="1511501686115" expanded="true" signature="522:692" ph="SELECT fikcd... fikcdn_buy" />
+            <marker date="1511501686115" expanded="true" signature="1547:1652" ph="SELECT count... fikcdn_buy" />
+            <marker date="1511501686115" expanded="true" signature="1997:2233" ph="SELECT domai... domain_stat_month" />
+            <marker date="1511501686115" expanded="true" signature="1997:2253" ph="SELECT domai... domain_stat_month" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/ajax_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <marker date="1511508675574" expanded="true" signature="499:866" ph="SELECT domai... domain_stat_product_bandwidth" />
+            <marker date="1511508675574" expanded="true" signature="1255:1534" ph="SELECT domai... domain_stat_product_bandwidth" />
+            <marker date="1511508675574" expanded="true" signature="1255:1547" ph="SELECT domai... domain_stat_product_bandwidth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/stat_buy_product_bandwidth_max.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="655" column="49" lean-forward="true" selection-start-line="655" selection-start-column="49" selection-end-line="655" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1510815642344" expanded="true" signature="4715:4773" ph="SELECT * FRO... fikcdn_buy" />
+            <marker date="1510815642344" expanded="true" signature="5367:5423" ph="SELECT * FRO... fikcdn_product" />
+            <marker date="1510815642344" expanded="true" signature="6237:6392" ph="SELECT max(b... domain_stat_product_max_bandwidth" />
+            <marker date="1510815642344" expanded="true" signature="7505:7622" ph="SELECT max(b... domain_stat_product_max_bandwidth" />
+            <marker date="1510815642344" expanded="true" signature="12898:13033" ph="SELECT * FRO... domain_stat_product_day" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="212" column="91" lean-forward="true" selection-start-line="212" selection-start-column="91" selection-end-line="212" selection-end-column="91" />
+        <state relative-caret-position="576">
+          <caret line="275" column="57" lean-forward="false" selection-start-line="275" selection-start-column="57" selection-end-line="275" selection-end-column="57" />
           <folding>
-            <element signature="e#0#5#0#PHP" expanded="false" />
             <element signature="e#78#140#0#PHP" expanded="false" />
             <element signature="e#194#205#0#PHP" expanded="false" />
             <element signature="e#350#365#0#PHP" expanded="false" />
@@ -960,12 +1009,12 @@
             <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#dl#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#1550#1555#0#PHP" expanded="false" />
-            <element signature="e#1588#1879#0#PHP" expanded="false" />
-            <element signature="e#1709#1714#0#PHP" expanded="false" />
-            <element signature="e#1734#1739#0#PHP" expanded="false" />
-            <element signature="e#1753#1758#0#PHP" expanded="false" />
-            <element signature="e#2106#2111#0#PHP" expanded="false" />
+            <element signature="e#1599#1604#0#PHP" expanded="false" />
+            <element signature="e#1637#1928#0#PHP" expanded="false" />
+            <element signature="e#1758#1763#0#PHP" expanded="false" />
+            <element signature="e#1783#1788#0#PHP" expanded="false" />
+            <element signature="e#1802#1807#0#PHP" expanded="false" />
+            <element signature="e#2155#2160#0#PHP" expanded="false" />
             <element signature="n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -973,31 +1022,29 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#2562#2567#0#PHP" expanded="false" />
+            <element signature="e#2611#2616#0#PHP" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#2846#2851#0#PHP" expanded="false" />
-            <element signature="n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#4622#5019#0#HTML" expanded="false" />
-            <element signature="e#4747#4998#0#HTML" expanded="false" />
-            <element signature="e#5027#5059#0#HTML" expanded="false" />
-            <element signature="e#5211#5232#0#HTML" expanded="false" />
-            <element signature="e#5371#5376#0#PHP" expanded="false" />
+            <element signature="e#2895#2900#0#PHP" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4767#5164#0#HTML" expanded="false" />
+            <element signature="e#4892#5143#0#HTML" expanded="false" />
+            <element signature="e#5172#5204#0#HTML" expanded="false" />
+            <element signature="e#5356#5377#0#HTML" expanded="false" />
+            <element signature="e#5516#5521#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/ajax_info.php">
+    <entry file="file://$PROJECT_DIR$/cdn/info_stat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="82" column="14" lean-forward="false" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        <state relative-caret-position="739">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
           <folding>
-            <marker date="1511508675574" expanded="true" signature="499:866" ph="SELECT domai... domain_stat_product_bandwidth" />
-            <marker date="1511508675574" expanded="true" signature="1255:1534" ph="SELECT domai... domain_stat_product_bandwidth" />
-            <marker date="1511508675574" expanded="true" signature="1255:1547" ph="SELECT domai... domain_stat_product_bandwidth" />
+            <marker date="1511515631665" expanded="true" signature="523:793" ph="SELECT domai... domain_stat_product_day" />
+            <marker date="1511515631665" expanded="true" signature="523:835" ph="SELECT domai... domain_stat_product_day" />
           </folding>
         </state>
       </provider>
