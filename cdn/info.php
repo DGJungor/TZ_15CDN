@@ -38,12 +38,12 @@ $userItems = $_SESSION['userInfo']['userItems'];
     <title>Document</title>
 
 
-        <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <!--    <link rel="stylesheet" href="./plugins/layui2/css/layui.css?t=1504112998306" media="all">-->
     <link rel="stylesheet" href="./plugins/layui2/css/layui.css">
 
 
-<!--        <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
+    <!--        <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
     <script src="./plugins/layui2/layui.all.js"></script>
 
 
@@ -58,11 +58,13 @@ $userItems = $_SESSION['userInfo']['userItems'];
         <a href="javascript:;">全部项目</a>
         <dl class="layui-nav-child"> <!-- 二级菜单 -->
             <?php
-            $i=0;
+            $i = 0;
             foreach ($userItems as $k => $v) {
 
                 ?>
-                <dd><a href="./info_c.php?id=<?php echo $v['id'] ?>&i=<?php echo $i;?>"><?php echo $v['name'] . '_' . $v['id']; ?></a></dd>
+                <dd>
+                    <a href="./info_c.php?id=<?php echo $v['id'] ?>&i=<?php echo $i; ?>"><?php echo $v['name'] . '_' . $v['id']; ?></a>
+                </dd>
                 <?php
                 $i++;
             }
@@ -116,12 +118,22 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
                         <div class="layui-col-md4">
                             实时宽带
+                            <div id="statBW">
+
+                            </div>
+                            kbs
                         </div>
                         <div class="layui-col-md4">
                             今日流量
+                            <div id="statSum">
+
+                            </div>
                         </div>
                         <div class="layui-col-md4">
                             今日请求数量
+                            <div id="statRes">
+
+                            </div>
                         </div>
 
                     </div>
@@ -168,7 +180,14 @@ $userItems = $_SESSION['userInfo']['userItems'];
         //…
     });
 
-    setTimeout("fmPost()", 1000)
+    //    setTimeout("fmPost()",100)
+    //    function fmPost(){alert("j");
+    //        location.reload();
+    //
+    //    }
+
+
+    setTimeout("fmPost()", 100)
 
     function fmPost() {
 //        alert("j");
@@ -180,15 +199,46 @@ $userItems = $_SESSION['userInfo']['userItems'];
             data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'bandwidth'},
             dataType: "json",
             success: function (msg) {
-//                if (msg.code == 1) {
-//                    layer.msg('已开启');
-//                    obj.update({
-//                        stateCN: '开启',
-//                    });
-//                }
-            },
-        })
+//                console.log(msg.msgBW);
+                var msgBW = msg.msgBW
+                $("#statBW").html(msgBW);
 
+
+            },
+        }),
+
+            $.ajax({
+                type: "POST",
+                url: "./ajax_info.php",
+                data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'Count'},
+                dataType: "json",
+                success: function (msg) {
+//                    console.log(msg);
+                    var msgSum = msg.msgSum
+                    var msgSumRes = msg.msgSumRes
+//                console.log(msgSum)
+                    $("#statSum").html(msgSum);
+                    $("#statRes").html(msgSumRes);
+
+                },
+            }),
+
+
+//            $.ajax({
+//                type: "POST",
+//                url: "./ajax_info.php",
+//                data: {'buy_id': <?php //echo $_SESSION['userInfo']['buy_id'] ?>//, 'action': 'resNum'},
+//                dataType: "json",
+//                success: function (msg) {
+//                    var msgSum = msg.msgSum
+////                console.log(msgSum)
+//                    $("#statSum").html(msgSum);
+//
+//                },
+//            }),
+
+
+            setTimeout("fmPost()", 800)
     }
 
 

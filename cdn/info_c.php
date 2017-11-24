@@ -28,9 +28,18 @@ $sth = $userPDO->query($sql);
 //$aa = $sth->execute();
 $userItems = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-$_SESSION['userInfo']['buy_id'] = $userItems[$_GET['i']]['id'];
-$_SESSION['userInfo']['name'] = $userItems[$_GET['i']]['name'] . '_' . $userItems[$_GET['i']]['id'];
-$_SESSION['userInfo']['userItems'] = $userItems;
+if(empty($_GET['i']))
+{
+    $_SESSION['userInfo']['buy_id'] = $userItems[0]['id'];
+    $_SESSION['userInfo']['name'] = $userItems[0]['name'] . '_' . $userItems[0]['id'];
+    $_SESSION['userInfo']['userItems'] = $userItems;
+
+}else{
+    $_SESSION['userInfo']['buy_id'] = $userItems[$_GET['i']]['id'];
+    $_SESSION['userInfo']['name'] = $userItems[$_GET['i']]['name'] . '_' . $userItems[$_GET['i']]['id'];
+    $_SESSION['userInfo']['userItems'] = $userItems;
+}
+
 
 
 //foreach ($userItems as $k => $v) {
@@ -102,10 +111,6 @@ echo $_SESSION['userInfo']['monthCount'];
 
 
 //---------实时宽带
-$sqlBand = "
-
-";
-
 
 
 
@@ -114,6 +119,12 @@ $sqlBand = "
 
 //--------------------------------打印数据
 
+//$beginToday=mktime(0,0,0,date('m'),date('d'),date('Y'));
+$aa = strtotime('-5 seconds');
+
+echo $aa;
+echo $bb;
+//echo $beginToday;
 echo '<pre>';
 var_dump($sth);
 var_dump($_SESSION);
