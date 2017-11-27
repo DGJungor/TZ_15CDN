@@ -44,6 +44,9 @@ LIMIT 1
 
         echo json_encode($msg);
         break;
+
+
+        //本月 日流量数据折线表
     case 'Count':
         //获取今日起始时间的时间戳
         $beginToday = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
@@ -84,7 +87,7 @@ domain_stat_product_bandwidth.time >= '$beginToday'
         //获取本月开始时间戳
         $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
         $buyID          = $_SESSION['userInfo']['buy_id'];
-        $buyID          = 175;
+//        $buyID          = 175;
 //echo $buyID;
 
         $statPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
@@ -107,12 +110,12 @@ domain_stat_product_day.time ASC
         $statSth = $statPDO->query($statSql);
         $statSth = $statSth->fetchAll(PDO::FETCH_ASSOC);
 
-        
+
         $i = 0;
         foreach ($statSth as $k => $v) {
 
 
-            $data['date'][$i] = date("m-d", $v['time']);
+            $data['date'][$i] = date("m月d日", $v['time']);
             $sum              = $v['DownloadCount'] + $v['UploadCount'];
             $data['sum'][$i]  = $sum;
             $i++;

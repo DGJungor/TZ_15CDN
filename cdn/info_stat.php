@@ -54,6 +54,8 @@ foreach ($statSth as $k => $v) {
     $sum              = $v['DownloadCount'] + $v['UploadCount'];
     $data['sum'][$i]  = $sum;
     $i++;
+
+
 }
 
 

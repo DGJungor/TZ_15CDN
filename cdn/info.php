@@ -179,13 +179,13 @@ $userItems = $_SESSION['userInfo']['userItems'];
             data: ['用户来源']
         },
         xAxis: {
-            data: ["Android", "IOS", "PC", "Ohter", "IOS", "PC", "Ohter", "IOS", "PC", "Ohter"]
+            data: [0]
         },
         yAxis: {},
         series: [{
-            name: '日流量(G)',
+            name: '日流量(单位:G)',
             type: 'line',
-            data: [500, 200, 360, 100, 200, 360, 100, 200, 360, 100]
+            data: [' ']
         }]
     };
     //初始化echarts实例
@@ -216,11 +216,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
         //…
     });
 
-    //    setTimeout("fmPost()",100)
-    //    function fmPost(){alert("j");
-    //        location.reload();
-    //
-    //    }
+
 
 
     setTimeout("fmPost()", 100)
@@ -262,8 +258,8 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
             $.ajax({
                 type: "POST",
-//                url: "./ajax_info.php",
-                url: "./info_stat.php",
+                url: "./ajax_info.php",
+//                url: "./info_stat.php",
                 data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'graphData'},
                 dataType: "json",
                 success: function (data) {
@@ -274,7 +270,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
                         },
                         series: [{
                             // 根据名字对应到相应的系列
-                            name: '销量',
+                            name: '日流量(G)',
                             data:data.sum
                         }]
                     });
@@ -288,6 +284,16 @@ $userItems = $_SESSION['userInfo']['userItems'];
     }
 
 
+
+
+
+
+
+    //    setTimeout("fmPost()",100)
+    //    function fmPost(){alert("j");
+    //        location.reload();
+    //
+    //    }
 </script>
 
 
