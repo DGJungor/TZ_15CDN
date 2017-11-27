@@ -52,7 +52,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
 <body>
 
 <ul class="layui-nav" lay-filter="filter">
-    <li class="layui-nav-item">概览</li>
+<!--    <li class="layui-nav-item">概览</li>-->
     <!--    <li class="layui-nav-item layui-this"><a href="">产品</a></li>-->
     <!--    <li class="layui-nav-item"><a href="">大数据</a></li>-->
     <li class="layui-nav-item">
@@ -171,22 +171,53 @@ $userItems = $_SESSION['userInfo']['userItems'];
 <script type="text/javascript">
     //指定图标的配置和数据
     var option = {
-        title: {
-            text: '流量统计'
+//        title: {
+//            text: '流量统计'
+//        },
+//        tooltip: {},
+//        legend: {
+//            data: ['用户来源']
+//        },
+//        xAxis: {
+//            data: [0]
+//        },
+//        yAxis: {},
+//        series: [{
+//            name: '日流量(单位:G)',
+//            type: 'line',
+//            data: [' ']
+//        }]
+
+        visualMap: {
+            show: false,
+            type: 'continuous',
+            seriesIndex: 0,
+            min: 0,
+            max: 300
         },
-        tooltip: {},
-        legend: {
-            data: ['用户来源']
+
+
+        title: {
+            left: 'center',
+            text: ''
+        },
+        tooltip: {
+            trigger: 'axis'
         },
         xAxis: {
             data: [0]
         },
-        yAxis: {},
-        series: [{
-            name: '日流量(单位:G)',
+        yAxis: {
+            splitLine: {show: false}
+        },
+        grid: {
+            bottom: '5%'
+        },
+        series: {
             type: 'line',
+            showSymbol: false,
             data: [' ']
-        }]
+        }
     };
     //初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));

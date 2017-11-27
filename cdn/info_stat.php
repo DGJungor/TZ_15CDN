@@ -55,7 +55,6 @@ foreach ($statSth as $k => $v) {
     $data['sum'][$i]  = $sum;
     $i++;
 
-
 }
 
 
