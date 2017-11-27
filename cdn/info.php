@@ -48,7 +48,6 @@ $userItems = $_SESSION['userInfo']['userItems'];
     <script src="./js/echarts.min.js"></script>
 
 
-
 </head>
 <body>
 
@@ -155,9 +154,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
                 <div class="layui-colla-content layui-show">
 
 
-
                     <div id="main" style="width:100%; height: 400px;"></div>
-
 
 
                 </div>
@@ -168,6 +165,35 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
 
 </fieldset>
+
+
+
+<script type="text/javascript">
+    //指定图标的配置和数据
+    var option = {
+        title: {
+            text: '流量统计'
+        },
+        tooltip: {},
+        legend: {
+            data: ['用户来源']
+        },
+        xAxis: {
+            data: ["Android", "IOS", "PC", "Ohter", "IOS", "PC", "Ohter", "IOS", "PC", "Ohter"]
+        },
+        yAxis: {},
+        series: [{
+            name: '日流量(G)',
+            type: 'line',
+            data: [500, 200, 360, 100, 200, 360, 100, 200, 360, 100]
+        }]
+    };
+    //初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    //使用制定的配置项和数据显示图表
+    myChart.setOption(option);
+</script>
 
 
 <script src="./plugins/layui2/layui.all.js"></script>
@@ -234,18 +260,28 @@ $userItems = $_SESSION['userInfo']['userItems'];
             }),
 
 
-//            $.ajax({
-//                type: "POST",
+            $.ajax({
+                type: "POST",
 //                url: "./ajax_info.php",
-//                data: {'buy_id': <?php //echo $_SESSION['userInfo']['buy_id'] ?>//, 'action': 'resNum'},
-//                dataType: "json",
-//                success: function (msg) {
-//                    var msgSum = msg.msgSum
-////                console.log(msgSum)
-//                    $("#statSum").html(msgSum);
-//
-//                },
-//            }),
+                url: "./info_stat.php",
+                data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'graphData'},
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    myChart.setOption({
+                        xAxis: {
+                            data:data.date
+                        },
+                        series: [{
+                            // 根据名字对应到相应的系列
+                            name: '销量',
+                            data:data.sum
+                        }]
+                    });
+
+
+                },
+            }),
 
 
             setTimeout("fmPost()", 800)
@@ -254,34 +290,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
 </script>
 
-<script type="text/javascript">
-    //指定图标的配置和数据
-    var option = {
-        title:{
-            text:'流量统计'
-        },
-        tooltip:{},
-        legend:{
-            data:['用户来源']
-        },
-        xAxis:{
-            data:["Android","IOS","PC","Ohter","IOS","PC","Ohter","IOS","PC","Ohter"]
-        },
-        yAxis:{
 
-        },
-        series:[{
-            name:'访问量',
-            type:'line',
-            data:[500,200,360,100,200,360,100,200,360,100]
-        }]
-    };
-    //初始化echarts实例
-    var myChart = echarts.init(document.getElementById('main'));
-
-    //使用制定的配置项和数据显示图表
-    myChart.setOption(option);
-</script>
 
 </body>
 </html>

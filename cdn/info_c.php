@@ -120,23 +120,23 @@ echo $_SESSION['userInfo']['monthCount'];
 //--------------------------------打印数据
 
 //$beginToday=mktime(0,0,0,date('m'),date('d'),date('Y'));
-$aa = strtotime('-5 seconds');
-
-echo $aa;
-echo $bb;
-//echo $beginToday;
-echo '<pre>';
-var_dump($sth);
-var_dump($_SESSION);
-
-echo '</pre>';
-
-echo '<pre>';
-var_dump($sth);
-echo $beginThismonth;
-
-var_dump($_GET['id']);
-echo '</pre>';
+//$aa = strtotime('-5 seconds');
+//
+//echo $aa;
+//echo $bb;
+////echo $beginToday;
+//echo '<pre>';
+//var_dump($sth);
+//var_dump($_SESSION);
+//
+//echo '</pre>';
+//
+//echo '<pre>';
+//var_dump($sth);
+//echo $beginThismonth;
+//
+//var_dump($_GET['id']);
+//echo '</pre>';
 
 
 
