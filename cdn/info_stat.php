@@ -49,7 +49,6 @@ $statSth = $statSth->fetchAll(PDO::FETCH_ASSOC);
 $i = 0;
 foreach ($statSth as $k => $v) {
 
-
     $data['date'][$i] = date("m-d", $v['time']);
     $sum              = $v['DownloadCount'] + $v['UploadCount'];
     $data['sum'][$i]  = $sum;

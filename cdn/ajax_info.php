@@ -7,8 +7,6 @@ if (!FuncClient_IsLogin()) {
     FuncClient_LocationLogin();
 }
 
-
-//var_dump($_POST['buy_id']);
 $buy_id = $_POST['buy_id'];
 
 $ajaxPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
@@ -46,7 +44,7 @@ LIMIT 1
         break;
 
 
-        //本月 日流量数据折线表
+    //本月 日流量数据折线表
     case 'Count':
         //获取今日起始时间的时间戳
         $beginToday = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
@@ -87,8 +85,6 @@ domain_stat_product_bandwidth.time >= '$beginToday'
         //获取本月开始时间戳
         $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
         $buyID          = $_SESSION['userInfo']['buy_id'];
-//        $buyID          = 175;
-//echo $buyID;
 
         $statPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
 
@@ -114,18 +110,14 @@ domain_stat_product_day.time ASC
         $i = 0;
         foreach ($statSth as $k => $v) {
 
-
             $data['date'][$i] = date("m月d日", $v['time']);
             $sum              = $v['DownloadCount'] + $v['UploadCount'];
             $data['sum'][$i]  = $sum;
             $i++;
         }
 
-
         echo json_encode($data);
 
-
-        echo "";
         break;
     default:
         echo "";

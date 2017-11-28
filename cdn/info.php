@@ -250,7 +250,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
 
 
-    setTimeout("fmPost()", 100)
+    setTimeout("fmPost()", 800)
 
     function fmPost() {
 //        alert("j");
