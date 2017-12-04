@@ -118,6 +118,12 @@ domain_stat_product_day.time ASC
 
         echo json_encode($data);
 
+
+        //获取30天前时间戳
+        $begin30Ago =  date('Ymd', strtotime("-30 day"));
+        echo $begin30Ago;
+
+
         break;
     default:
         echo "";
