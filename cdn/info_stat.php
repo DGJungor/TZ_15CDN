@@ -18,7 +18,7 @@ if (!FuncClient_IsLogin()) {
 //获取本月开始时间戳
 $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
 $buyID          = $_SESSION['userInfo']['buy_id'];
-$buyID          = 175;
+//$buyID          = 175;
 //echo $buyID;
 
 $statPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);

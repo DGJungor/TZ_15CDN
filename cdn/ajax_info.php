@@ -82,9 +82,48 @@ domain_stat_product_bandwidth.time >= '$beginToday'
         break;
     case 'graphData':
 
-        //获取本月开始时间戳
-        $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
-        $buyID          = $_SESSION['userInfo']['buy_id'];
+//        //获取本月开始时间戳
+//        $beginThismonth = mktime(0, 0, 0, date('m'), 1, date('Y'));
+//        $buyID          = $_SESSION['userInfo']['buy_id'];
+//
+//        $statPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
+//
+//        $statSql = "
+//SELECT
+//domain_stat_product_day.buy_id,
+//domain_stat_product_day.time,
+//domain_stat_product_day.RequestCount,
+//domain_stat_product_day.UploadCount,
+//domain_stat_product_day.DownloadCount
+//FROM
+//domain_stat_product_day
+//WHERE
+//domain_stat_product_day.buy_id = '$buyID' AND
+//domain_stat_product_day.time >= '$beginThismonth'
+//ORDER BY
+//domain_stat_product_day.time ASC
+//";
+//        $statSth = $statPDO->query($statSql);
+//        $statSth = $statSth->fetchAll(PDO::FETCH_ASSOC);
+//
+//
+//        $i = 0;
+//        foreach ($statSth as $k => $v) {
+//
+//            $data['date'][$i] = date("m月d日", $v['time']);
+//            $sum              = $v['DownloadCount'] + $v['UploadCount'];
+//            $data['sum'][$i]  = $sum;
+//            $i++;
+//        }
+//
+//        echo json_encode($data);
+
+
+        //获取30天前时间戳
+        $begin30Ago = strtotime("-30 day");
+//        echo $begin30Ago;
+
+        $buyID = $_SESSION['userInfo']['buy_id'];
 
         $statPDO = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', DB_USER, DB_PASSWD);
 
@@ -99,30 +138,32 @@ FROM
 domain_stat_product_day
 WHERE
 domain_stat_product_day.buy_id = '$buyID' AND
-domain_stat_product_day.time >= '$beginThismonth'
+domain_stat_product_day.time >= '$begin30Ago'
 ORDER BY
 domain_stat_product_day.time ASC
 ";
         $statSth = $statPDO->query($statSql);
         $statSth = $statSth->fetchAll(PDO::FETCH_ASSOC);
 
-
         $i = 0;
         foreach ($statSth as $k => $v) {
 
-            $data['date'][$i] = date("m月d日", $v['time']);
-            $sum              = $v['DownloadCount'] + $v['UploadCount'];
-            $data['sum'][$i]  = $sum;
+            $data[$i][0] = $v['time'];
+            $data[$i][1]              = $v['DownloadCount'] + $v['UploadCount'];
             $i++;
         }
 
         echo json_encode($data);
 
 
-        //获取30天前时间戳
-        $begin30Ago =  date('Ymd', strtotime("-30 day"));
-        echo $begin30Ago;
-
+//        echo "<pre>";
+//        echo json_encode($data);
+////        print_r($data); // or var_dump()
+//        echo "</pre><br>";
+//
+//        echo "<pre>";
+//        print_r($statSth); // or var_dump()
+//        echo "</pre><br>";
 
         break;
     default:

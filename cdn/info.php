@@ -45,7 +45,9 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
     <!--        <script src="./Public/jquery/1.11.3/jquery.js"></script>-->
     <script src="./plugins/layui2/layui.all.js"></script>
-    <script src="./js/echarts.min.js"></script>
+    <!-- <script src="./js/echarts.min.js"></script> -->
+    <script src="../highcharts-302/js/highcharts.js"></script>
+	<script src="../highcharts-302/js/modules/exporting.js"></script>
 
 
 </head>
@@ -154,8 +156,8 @@ $userItems = $_SESSION['userInfo']['userItems'];
                 <div class="layui-colla-content layui-show">
 
 
-                    <div id="main" style="width:100%; height: 400px;"></div>
-
+                    <!-- <div id="main" style="width:100%; height: 400px;"></div> -->
+                    <div style="height: 300px;width:100%;" id="placeholder"></div>
 
                 </div>
             </div>
@@ -169,61 +171,322 @@ $userItems = $_SESSION['userInfo']['userItems'];
 
 
 <script type="text/javascript">
-    //指定图标的配置和数据
-    var option = {
-//        title: {
-//            text: '流量统计'
-//        },
-//        tooltip: {},
-//        legend: {
-//            data: ['用户来源']
-//        },
-//        xAxis: {
-//            data: [0]
-//        },
-//        yAxis: {},
-//        series: [{
-//            name: '日流量(单位:G)',
-//            type: 'line',
-//            data: [' ']
-//        }]
+function getCrashReportStatData() {
+    $.ajax({
+                type: "POST",
+                url: "./ajax_info.php",
+//                url: "./info_stat.php",
+                data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'graphData'},
+                dataType: "json",
+                success: function (data) {
+                    var __StatDataSets = [];
+                    __StatDataSets.push({
+                        name: "流量趋势",
+                        data: data
+                    });
+                    console.log(data);
+                    update_enginConn_chart(__StatDataSets);
+                },
+            })
+}
+var enginConn_chart;
 
-        visualMap: {
-            show: false,
-            type: 'continuous',
-            seriesIndex: 0,
-            min: 0,
-            max: 300
-        },
+function update_enginConn_chart(__StatDataSets){
+	enginConn_chart.redraw();
+	var down_data=[];
+	// var up_data=[];
+
+	down_data = __StatDataSets[0];
+	// up_data = __StatDataSets[1];
+	
+	var down_name = down_data['name'];
+	// var up_name = up_data['name'];
+	
+	var down_num = [];
+	// var up_num = [];
+	
+	var data_grp = [];
+	
+	var xData = 0;		
+	var yData = 0;	
+		
+	for(var key in down_data['data'])
+	{		
+		data_grp = down_data['data'][key];
+		
+		xData = parseInt(data_grp[0])*1000;	
+		yData = parseFloat(data_grp[1]);
+				
+		down_num.push({ y : yData,x : xData});
+	}
+	
+		
+	// for(var key in up_data['data'])
+	// {		
+	// 	data_grp = up_data['data'][key];
+			
+	// 	xData = parseInt(data_grp[0])*1000;	
+	// 	yData = parseFloat(data_grp[1]);
+				
+	// 	up_num.push({ y : yData, x : xData});
+	// }
+		
+    for(var k = enginConn_chart.series.length - 1; k >= 0; k--){
+         enginConn_chart.series[k].remove();
+    }
+		
+	//var jsonText = JSON.stringify(up_num); 
+	//alert(jsonText);
+	
+	//[{x: 12,y: 10}, {x: 24,y: 45},{x: 34,y: 25},{x: 67,y: 265},{x: 123,y: 365},{x: 233,y: 95},{x: 363,y: 87}],
+	
+	enginConn_chart.addSeries({
+		type: 'area',
+		color: '#2ebacb',//'#2f7ed8',
+		name: down_name,
+		data: down_num,
+	});
+	
+	
+	//[{x: 12,y: 310}, {x: 24,y: 345},{x: 34,y: 225},{x: 67,y: 465},{x: 123,y: 78},{x: 233,y: 35},{x: 363,y: 234}],
+	// enginConn_chart.addSeries({
+	// 	type: 'area',
+	// 	color: '#f0d52e',//color: '#a8d822',
+	// 	name:  up_name,
+	// 	data: up_num,
+	// });
+}
+
+Highcharts.setOptions( {
+	global : {
+		useUTC : false
+	}
+});
+
+jQuery(document).ready(function(){
+		sLabelName='';
+		aryData=[];                          
+
+		enginConn_chart = new Highcharts.Chart({
+		   chart: {
+				renderTo: 'placeholder',
+				defaultSeriesType: 'spline',
+                marginRight: 0,
+                marginBottom: 40,
+				backgroundColor: '#F8F9FA'
+		   },                                 
+
+		   title: {
+				text: '<span class="input_tips_txt"><strong>数据展示</strong></span>',
+				style: {color:'#004499',fontSize:'13px'},
+				align: 'center',
+				x: -40, //center
+				y: 15
+		   },
+		   /*	
+           subtitle: {
+               text: '服务器带宽统计',
+               x: -20
+           },
+		   */
+		   xAxis: {
+				type: 'datetime',
+            	lineWidth :2,//自定义x轴宽度  
+            	gridLineWidth :0,//默认是0，即在图上没有纵轴间隔线
+				dateTimeLabelFormats : {
+					second: '%H:%M:%S',
+					minute: '%H:%M',
+					hour: '%H:%M',
+					day: '%m-%d', 
+					week: '%m-%d',
+					month: '%Y-%m',
+					year: '%Y'
+				},		
+				lineColor : '#3E576F'
+		   },
+
+  		   exporting:{
+				// 是否允许导出
+				enabled:false,
+				// 按钮配置
+				buttons:{
+					// 导出按钮配置
+					exportButton:{
+						menuItems: null,
+						onclick: function() {
+							this.exportChart();
+						}
+					},
+					// 打印按钮配置
+					printButton:{
+						enabled:false
+					}
+				},
+				// 文件名
+				filename: '报表',
+				// 导出文件默认类型
+				type:'application/pdf'
+			},
+			
+    		plotOptions: {
+				area: {
+					fillOpacity: 0.2,
+					lineWidth: 1,
+					marker: {
+						enabled: false,
+						states: {
+							hover: {
+								enabled: true,
+								radius: 5
+							}
+						}
+					},
+					shadow: false,
+					states: {
+						hover: {
+							lineWidth: 1
+						}
+					},
+					threshold: null
+				}
+			},
+			/*									   
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]				
+                        ]
+                    },
+                    lineWidth: 1,
+                    marker: {
+                        enabled: false
+                    },
+                    shadow: false,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+			*/
+		   yAxis: {
+		   		min: 0,
+				labels:{
+					// 标签位置
+					align: 'right',
+					// 标签格式化
+					formatter: function(){
+						return this.value + ' GB';
+					}
+				},
+								  
+				title: {
+					text: '套餐日流量统计',
+					style: {color:'#aaaaaa',fontSize:'12px'},
+				},
+				showFirstLabel: true,  
+				plotLines: [{
+						 value: 0,
+						 width: 1,
+						 color: '#87BED3'
+				}]
+		   },
+		   
+		   tooltip: {
+		   		enabled: true,
+				userHTML: true,
+				valueSuffix: 'GB',
+				formatter: function() { //当鼠标悬置数据点时的格式化提示 
+					var myDate = new Date(this.x);
+					var strTime = myDate.getFullYear() + '-' + numAddZero((myDate.getMonth()+1),2) + '-' + numAddZero(myDate.getDate(),2); 
+					
+					//var strTime = myDate.toLocaleString();
+	       	        return '<b>' + strTime + '</b><br/><b>' + this.series.name + ': ' + this.y + ' GB</b>'; 
+				}
+		   },
+		   
+           legend: {
+				enabled: false,       
+                layout: 'horizontal',
+                align: 'right',
+                verticalAlign: 'top',
+                x: 0,
+                y: 0,
+                borderWidth: 0
+            },		   
+   			
+			credits: {  
+                enabled: false     //去掉highcharts网站url  
+           	},
+	});
+});
+getCrashReportStatData();
+//位数不够补0
+function numAddZero(num, n) {
+	return Array(n-(''+num).length+1).join(0)+num; 
+}
 
 
-        title: {
-            left: 'center',
-            text: ''
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-            data: [0]
-        },
-        yAxis: {
-            splitLine: {show: false}
-        },
-        grid: {
-            bottom: '5%'
-        },
-        series: {
-            type: 'line',
-            showSymbol: false,
-            data: [' ']
-        }
-    };
-    //初始化echarts实例
-    var myChart = echarts.init(document.getElementById('main'));
+//     //指定图标的配置和数据
+//     var option = {
+// //        title: {
+// //            text: '流量统计'
+// //        },
+// //        tooltip: {},
+// //        legend: {
+// //            data: ['用户来源']
+// //        },
+// //        xAxis: {
+// //            data: [0]
+// //        },
+// //        yAxis: {},
+// //        series: [{
+// //            name: '日流量(单位:G)',
+// //            type: 'line',
+// //            data: [' ']
+// //        }]
 
-    //使用制定的配置项和数据显示图表
-    myChart.setOption(option);
+//         visualMap: {
+//             show: false,
+//             type: 'continuous',
+//             seriesIndex: 0,
+//             min: 0,
+//             max: 300
+//         },
+
+
+//         title: {
+//             left: 'center',
+//             text: ''
+//         },
+//         tooltip: {
+//             trigger: 'axis'
+//         },
+//         xAxis: {
+//             data: [0]
+//         },
+//         yAxis: {
+//             splitLine: {show: false}
+//         },
+//         grid: {
+//             bottom: '5%'
+//         },
+//         series: {
+//             type: 'line',
+//             showSymbol: false,
+//             data: [' ']
+//         }
+//     };
+//     //初始化echarts实例
+//     var myChart = echarts.init(document.getElementById('main'));
+
+//     //使用制定的配置项和数据显示图表
+//     myChart.setOption(option);
 </script>
 
 
@@ -295,16 +558,16 @@ $userItems = $_SESSION['userInfo']['userItems'];
                 dataType: "json",
                 success: function (data) {
                     console.log(data);
-                    myChart.setOption({
-                        xAxis: {
-                            data:data.date
-                        },
-                        series: [{
-                            // 根据名字对应到相应的系列
-                            name: '日流量(G)',
-                            data:data.sum
-                        }]
-                    });
+                    // myChart.setOption({
+                    //     xAxis: {
+                    //         data:data.date
+                    //     },
+                    //     series: [{
+                    //         // 根据名字对应到相应的系列
+                    //         name: '日流量(G)',
+                    //         data:data.sum
+                    //     }]
+                    // });
 
 
                 },
