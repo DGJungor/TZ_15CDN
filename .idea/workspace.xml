@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7af43f1-a8a8-4dff-ae7d-7a05f1b221fc" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cdn/ajax_info.php" afterPath="$PROJECT_DIR$/cdn/ajax_info.php" />
       <change beforePath="$PROJECT_DIR$/cdn/info.php" afterPath="$PROJECT_DIR$/cdn/info.php" />
-      <change beforePath="$PROJECT_DIR$/cdn/info_stat.php" afterPath="$PROJECT_DIR$/cdn/info_stat.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax_info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cdn/ajax_info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="2728">
               <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
                 <marker date="1512443451807" expanded="true" signature="468:835" ph="SELECT domai... domain_stat_product_bandwidth" />
@@ -59,14 +57,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cdn/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="159" column="56" lean-forward="false" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+            <state relative-caret-position="335">
+              <caret line="556" column="32" lean-forward="true" selection-start-line="556" selection-start-column="32" selection-end-line="556" selection-end-column="32" />
               <folding>
                 <element signature="e#78#140#0#PHP" expanded="false" />
                 <element signature="e#194#205#0#PHP" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +109,8 @@
         <option value="F:/fikcdn/config/PDO_config.php" />
         <option value="$PROJECT_DIR$/cdn/info_stat.php" />
         <option value="$USER_HOME$/Desktop/test.json" />
-        <option value="$PROJECT_DIR$/cdn/info.php" />
         <option value="$PROJECT_DIR$/cdn/ajax_info.php" />
+        <option value="$PROJECT_DIR$/cdn/info.php" />
       </list>
     </option>
   </component>
@@ -122,9 +121,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-88" />
-    <option name="y" value="74" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-58" />
+    <option name="y" value="366" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -215,15 +214,15 @@
       <workItem from="1511831055778" duration="1314000" />
       <workItem from="1511832390175" duration="672000" />
       <workItem from="1512377966855" duration="1968000" />
-      <workItem from="1512436137011" duration="6552000" />
+      <workItem from="1512436137011" duration="7067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106919000" />
+    <option name="totallyTimeSpent" value="107434000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-58" y="366" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -619,20 +618,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cdn/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="159" column="56" lean-forward="false" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
-          <folding>
-            <element signature="e#78#140#0#PHP" expanded="false" />
-            <element signature="e#194#205#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cdn/ajax_info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="2728">
           <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
             <marker date="1512443451807" expanded="true" signature="468:835" ph="SELECT domai... domain_stat_product_bandwidth" />
@@ -642,6 +630,18 @@
             <marker date="1512443451807" expanded="true" signature="3630:3980" ph="SELECT domai... domain_stat_product_day" />
             <marker date="1512443451807" expanded="true" signature="4350:4455" ph="..." />
             <marker date="1512443451807" expanded="true" signature="4486:4557" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdn/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="556" column="32" lean-forward="true" selection-start-line="556" selection-start-column="32" selection-end-line="556" selection-end-column="32" />
+          <folding>
+            <element signature="e#78#140#0#PHP" expanded="false" />
+            <element signature="e#194#205#0#PHP" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

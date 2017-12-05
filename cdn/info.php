@@ -550,28 +550,28 @@ function numAddZero(num, n) {
             }),
 
 
-            $.ajax({
-                type: "POST",
-                url: "./ajax_info.php",
-//                url: "./info_stat.php",
-                data: {'buy_id': <?php echo $_SESSION['userInfo']['buy_id'] ?>, 'action': 'graphData'},
-                dataType: "json",
-                success: function (data) {
-                    console.log(data);
-                    // myChart.setOption({
-                    //     xAxis: {
-                    //         data:data.date
-                    //     },
-                    //     series: [{
-                    //         // 根据名字对应到相应的系列
-                    //         name: '日流量(G)',
-                    //         data:data.sum
-                    //     }]
-                    // });
-
-
-                },
-            }),
+//             $.ajax({
+//                 type: "POST",
+//                 url: "./ajax_info.php",
+// //                url: "./info_stat.php",
+//                 data: {'buy_id': , 'action': 'graphData'},
+//                 dataType: "json",
+//                 success: function (data) {
+//                     console.log(data);
+//                     // myChart.setOption({
+//                     //     xAxis: {
+//                     //         data:data.date
+//                     //     },
+//                     //     series: [{
+//                     //         // 根据名字对应到相应的系列
+//                     //         name: '日流量(G)',
+//                     //         data:data.sum
+//                     //     }]
+//                     // });
+//
+//
+//                 },
+//             }),
 
 
             setTimeout("fmPost()", 800)
