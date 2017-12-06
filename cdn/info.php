@@ -124,7 +124,7 @@ $userItems = $_SESSION['userInfo']['userItems'];
                             <div id="statBW">
 
                             </div>
-                            kbs
+                            Mbps
                         </div>
                         <div class="layui-col-md4">
                             今日流量

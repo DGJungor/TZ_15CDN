@@ -16,7 +16,42 @@ switch ($_POST['action']) {
     case 'bandwidth':
         //获取5秒前的时间戳
         $time5Ago = strtotime('-5 seconds');
-        $sqlBW    = "
+//        $sqlBW    = "
+//SELECT
+//domain_stat_product_bandwidth.bandwidth_down,
+//domain_stat_product_bandwidth.id,
+//domain_stat_product_bandwidth.bandwidth_up,
+//domain_stat_product_bandwidth.time
+//FROM
+//domain_stat_product_bandwidth
+//WHERE
+//domain_stat_product_bandwidth.buy_id = '$buy_id' AND
+//domain_stat_product_bandwidth.time >= '$time5Ago'
+//ORDER BY
+//domain_stat_product_bandwidth.time DESC
+//LIMIT 1
+//
+//";
+
+
+//        $buy_id = 175;
+        $time = time();
+
+        //获取5分钟前 时间戳
+        $time5Ago = strtotime('-300 seconds');
+
+
+//        var_dump($time);
+//        var_dump($time5Ago);
+//        $timeval1 = mktime(0,0,0,date("m"),date("d"),date("Y"))-($date2*60*60*24);
+//        $timeval2 = 1511249041;
+//        $timeval1 = 1511232730;
+
+//        $timeval2 = $timeval1 + 60*60*24;
+
+
+//        var_dump($timeval1);
+        $sqlBW = "
 SELECT
 domain_stat_product_bandwidth.bandwidth_down,
 domain_stat_product_bandwidth.id,
@@ -26,18 +61,23 @@ FROM
 domain_stat_product_bandwidth
 WHERE
 domain_stat_product_bandwidth.buy_id = '$buy_id' AND 
-domain_stat_product_bandwidth.time >= '$time5Ago'
-ORDER BY
-domain_stat_product_bandwidth.time DESC
-LIMIT 1
-
+time>='$time5Ago' AND time<'$time' ORDER BY time DESC
 ";
-        $sthBW    = $ajaxPDO->query($sqlBW);
+
+
+        $sthBW = $ajaxPDO->query($sqlBW);
 
         $sth = $sthBW->fetchAll(PDO::FETCH_ASSOC);
 
-        $msgBW = $sth[0]['bandwidth_down'] + $sth[0]['bandwidth_up'];
+//        var_dump($sth);
+//        $msgBW = $sth[0]['bandwidth_down'] + $sth[0]['bandwidth_up'];
 
+        foreach ($sth as $k=>$v){
+            $msgBW += $v['bandwidth_down'];
+
+        }
+
+//        var_dump($msgBW);
         $msg['msgBW'] = $msgBW;
 
         echo json_encode($msg);
@@ -74,7 +114,7 @@ domain_stat_product_bandwidth.time >= '$beginToday'
             $sum    = $sum + $v['up_increase'];
             $sumRes = $sumRes + $v['RequestCount_increase'];
         }
-        $sumToMB          = PubFunc_KBToString($sum);
+        $sumToMB          = PubFunc_MBToString($sum);
         $msg['msgSum']    = $sumToMB;
         $msg['msgSumRes'] = $sumRes;
 
@@ -149,7 +189,7 @@ domain_stat_product_day.time ASC
         foreach ($statSth as $k => $v) {
 
             $data[$i][0] = $v['time'];
-            $data[$i][1]              = $v['DownloadCount'] + $v['UploadCount'];
+            $data[$i][1] = $v['DownloadCount'] + $v['UploadCount'];
             $i++;
         }
 
